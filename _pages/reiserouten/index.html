@@ -1,0 +1,100 @@
+---
+layout: default
+id: reiserouten
+title: Reiserouten
+nav: true
+nav-order: 4
+content-pages: true
+
+banner:
+  title: Roadtrips
+  title-sup: Immer der Straße nach
+  title-size: banner-title--xl
+  bg-hero: "background-position: 30% center;"
+
+page-nav:
+  - id: one
+    title: Südafrika
+  - id: two
+    title: Irland
+  - id: three
+    title: Italien
+
+summary: "Nirgendwo begegnet man sich selbst so sehr wie bei einem Roadtrip. Hinter dem Steuer ist jeder Tag eine neue Heraus&shy;forderung, keine Straße ist gleich und die schönsten Panoramen kommen oft unverhofft. Für die Abenteurer unter uns: Irlands Küste, Südafrikas Garden Route und Toskanas Welterbe-Städte – denn auch die Heldinnen und Helden der Hörbücher sind gerne&nbsp;unterwegs."
+cta: Weiter fahren
+
+intro-title: "Treibstoff für lange&nbsp;Wege"
+intro: "Der Tank ist voll, die nächste Ausfahrt weit und der Fuß auf dem Gas&shy;pedal. Kombinieren Sie Ihr Roadtrip-Erlebnis mit den Erfahrungen der Reisenden aus den folgenden Hörbüchern. Und erreichen Sie vor einzigartiger Kulisse und mit spannendem Zeit&shy;vertreib Ihr Ziel. "
+
+---
+
+
+<script>
+
+    var bvOverlay4 = document.getElementById("bv-overlay-4");
+    var bvOverlay5 = document.getElementById("bv-overlay-5");
+    var bvOverlay6 = document.getElementById("bv-overlay-6");
+
+    var bvCaption4 = document.getElementById("bv-caption-4");
+    var bvCaption5 = document.getElementById("bv-caption-5");
+    var bvCaption6 = document.getElementById("bv-caption-6");
+
+
+
+     bvOverlay4.onmouseover = function() {
+       bvCaption4.style.visibility = "visible";
+     }
+     bvOverlay4.onmouseout = function() {
+       bvCaption4.style.visibility = "hidden";
+     }
+
+     bvOverlay5.onmouseover = function() {
+       bvCaption5.style.visibility = "visible";
+     }
+     bvOverlay5.onmouseout = function() {
+       bvCaption5.style.visibility = "hidden";
+     }
+
+     bvOverlay5.onmouseover = function() {
+       bvCaption5.style.visibility = "visible";
+     }
+     bvOverlay5.onmouseout = function() {
+       bvCaption5.style.visibility = "hidden";
+     }
+
+     bvOverlay6.onmouseover = function() {
+       bvCaption6.style.visibility = "visible";
+     }
+     bvOverlay6.onmouseout = function() {
+       bvCaption6.style.visibility = "hidden";
+     }
+
+
+</script>
+
+
+{% if page.page-nav %}{% include nav/page.html %}{% endif %}
+
+<div id="bv-roadtrips">
+{% include page/reiserouten/reiserouten1.html %}
+{% include page/reiserouten/reiserouten2.html %}
+{% include page/reiserouten/reiserouten3.html %}
+</div>
+
+<div id="bv-road-ie">
+
+  {% include page/reiserouten/reiserouten1-ie.html %}
+  {% include page/reiserouten/reiserouten2-ie.html %}
+  {% include page/reiserouten/reiserouten3-ie.html %}
+</div>
+<script>
+  var elem = document.getElementById("bv-road-ie");
+  var elem2 = document.getElementById("bv-roadtrips");
+  var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+
+  if (isIE11 === true) {
+        elem2.parentNode.removeChild(elem2);
+  }else{
+      elem.parentNode.removeChild(elem);
+  }
+</script>

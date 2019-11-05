@@ -1,0 +1,33 @@
+
+- id: three
+  title: Entlang der Elephant Coast
+  num: "3"
+
+  pois:
+
+    title:
+    items:
+
+      - title: "Kunst für die Welt: Florenz&nbsp;und&nbsp;Siena"
+        id: img1
+        caption:
+        content: "Ob Startort oder Zwischenetappe: Toskanas Kunststädte Florenz und Siena sollten bei jeder Rundreise dabei sein. Florenz begeistert mit dem Duomo und den Uffizien, während Siena ihre historische Altstadt, die zum UNESCO-Weltkulturerbe ernannt wurde, in die Waagschale wirft. Mittelalter oder Renaissance? Beides!"
+
+      - title: Roadtrip im Zeichen der Traube
+        id: img2
+        caption:
+        content: "In einer Region Italiens, deren Name fast zum Synonym für Genuss geworden ist, ist jede Station ein Highlight. Kunst und Geschichte, Weinberge, sanfte Hügel und hübsche Küstenorte – die Anzahl der möglichen Routen durch die Toskana ist schier endlos. Folgende Highlights sind deshalb eher stichpunktartige&nbsp;Anregungen."
+
+      - title: Auf der Spur des Chianti
+        id: img3
+        caption:
+        content: "Ein Besuch der Toskana ist nicht komplett ohne Weinverkostungen. Im goldenen Becken “Conca d’Oro” zwischen Florenz und Siena wird der berühmte Chianti Classico hergestellt. Viele kleine Weingüter operieren dabei als agrotouristische Herbergen und bieten Übernachtungs&shy;möglichkeiten&nbsp;an."
+
+      - title: Historische Städtchen
+        id: img4
+        content: "Entdecken Sie über 2.400 Jahre Geschichte in Volterra, besuchen Sie die 15 Geschlechtertürme in San Gimignano und unternehmen Sie einen Ausflug ins Mittelalter in Monteriggioni, dessen Altstadtkern vollständig umschlossen von einer Stadtmauer ist. Im Anschluss lockt das Panorama im hügeligen Tal bei Colle&nbsp;di&nbsp;Val&nbsp;d’Elsa."
+
+      - title: Küstenromantik
+        id: img5
+        caption:
+        content: "Es ist leicht zu vergessen, dass auch die Toskana über eine Mittelmeerküste verfügt. Nach all den Feldern, Weingütern und Altstädten ist die maritime Abwechslung sehr willkommen. Auf also zum Schachbrett der Terrazza Mascagni in Livorno und einen ungehinderten Blick auf das Meer werfen – und sich noch mehr ins Genussland&nbsp;verlieben."

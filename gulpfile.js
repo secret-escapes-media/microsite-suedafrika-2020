@@ -26,7 +26,7 @@ function browserSyncServe() {
     server: {
       baseDir: '_site/',
       routes: {
-        '/template': '_site/'
+        '/de/2020/suedafrika': '_site/'
       }
     }
   });

@@ -20,11 +20,11 @@
     right: 0;
     bottom: 0;
     z-index: $z-content-upper;
-    display: flex;
-    align-items: center;
+    //display: flex;
+    align-items: baseline;
     justify-content: center;
     color: $white;
-    text-align: center;
+    //text-align: center;
     @include page-padding;
   }
   &__bg-overlay {

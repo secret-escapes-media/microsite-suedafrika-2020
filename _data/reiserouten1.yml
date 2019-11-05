@@ -1,0 +1,38 @@
+
+- id: one
+  title: Garden Route 
+  num: "1"
+
+  pois:
+
+    title:
+    items:
+
+      - title: Vom Tafelberg zur&nbsp;Walhauptstadt
+        id: img1
+        caption:
+        content: "Im engeren Sinne nicht Teil der Garden Route, sprechen Kapstadts Vorzüge als Startpunkt für sich: Tafelberg und Kap der Guten Hoffnung, Streetart und pulsierende Kultur, Woodstock und Green Point. Die National Route 2 führt Sie nach Osten, ganze 120 km bis nach Hermanus am Western Cape. Hier sind Sichtungen von Buckelwalen an der&nbsp;Tagesordnung."
+
+      - title: Ein Nationalpark nach dem anderen
+        id: img2
+        caption:
+        content: "Von Mossel Bay im Westen nach Storms River im Osten: Südafrikas Garden Route hat ihren festen Platz in der Riege der Roadtrips. Während die Kernstrecke 300 km umfasst, lohnt es sich, Kapstadt als Startpunkt zu nehmen und an der N2 nach Port Elizabeth im Addo National&shy;park mit seinen Elefanten Halt zu&nbsp;machen."
+
+      - title: Strandparadiese
+        id: img3
+        caption:
+        content: "Einige der besten Strände Südafrikas offenbaren sich an einem Ort, der nicht nach seinem Namen aussieht: Wilderness. Daneben lädt das Städtchen zu Kanufahrten und Paragliding ein – und bietet bei Wilderness Heights von 'The Map of Africa' aus eine fantastische Aussicht auf den Kaaimans River, der die Umrisse des Kontinents&nbsp;nachzieht."
+
+      - title: "Knysna: Austern und&nbsp;Lagunen"
+        id: img4
+        content: "Die charmante Hafenstadt, bekannt für köstliche Austern und eine große Lagune, wird von zwei Sandstein&shy;klippen flankiert. Vom östlichen der sogenannten Knysna Heads sind spektakuläre Ausblicke auf Stadt und Wasser zu erhaschen. Als weitere Besonder&shy;heit beherbergt Knysna eine große Rastafari-Community, die im Rahmen einer Township Tour besucht werden&nbsp;kann."
+
+      - title: Natur im Überfluss
+        id: img5
+        caption:
+        content: "Fabelhafter Abschluss: Der Tsitsikamma National Park, Teil des größeren namensgebenden Garden Route National Park, zieht sich als Streifen direkt an der Küste entlang, dort, wo der Storms River in den Ozean mündet. Ganzjährig mildes Klima, immergrüne Wälder und ein Überangebot an adrenalin&shy;geladenen Abenteuern machen das Küsten&shy;paradies zum würdigen Endpunkt der&nbsp;Route."
+
+      - title: Abschied mit den Big&nbsp;Five
+        id: img6
+        caption:
+        content: "Es sei denn, Sie begeben sich weitere 250 km ostwärts zum Addo-Elephant-Nationalpark bei Port Elizabeth. Belohnt werden Sie dort nicht nur von Sichtungen der Big Five (Löwe, Leopard, Nashorn, Elefant und Büffel) in freier Natur – auf den vorgelagerten Inseln treffen Sie auch afrikanische Pinguine und&nbsp;Delfine."

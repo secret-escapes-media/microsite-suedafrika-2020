@@ -1,1 +1,396 @@
 // general styles for the project that wouldn't be a reuseable component
+
+
+
+/* ==========================================================================
+ Collapsible
+========================================================================== */
+
+
+
+.accordion {
+    cursor: pointer;
+    width: 100%;
+    height: 15px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: normal;
+}
+.accordion::after{
+  content: url(../img/icons/close.svg);
+  transform: scale(.3) rotate(135deg);
+  display: block;
+  margin-top: -43px;
+  margin-bottom: -18px;
+  margin-left: 95%;
+  transition: all 0.5s ease-out;
+}
+ .accordion:hover{
+
+   //font-weight: bold;
+ }
+ .bv-active{
+
+ }
+.bv-active::after {
+  font-weight: bold;
+  content: url(../img/icons/close.svg);
+  transform: scale(.3) rotate(0deg);
+  margin-left: 95%;
+  transition: all 0.5s ease-out;
+
+}
+
+
+.bv-collapsible {
+
+  cursor: pointer;
+
+}
+
+.bv-content {
+
+  //max-height: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+
+
+/* ==========================================================================
+Insidertipps
+========================================================================== */
+
+.bv-img-insider{
+  width: 75%;
+  max-width: $lg;
+
+  @include bp($xl) {
+    width: 25%;
+    max-width: none;
+  }
+}
+
+.bv-img-circle {
+  border-radius: 500px;
+  //border: 4px $white solid;
+  text-align: center;
+  padding-top: 10px;
+  width: 75px;
+  height: 75px;
+}
+
+
+
+.bv-swap{
+  flex-direction: row-reverse;
+}
+.bv-mob-hide{
+
+  display: none;
+  @include bp($xl){
+    display: block;
+  }
+}
+.bv-copyright{
+  display: inline-block;
+  position: absolute;
+  text-align: right;
+  letter-spacing: -1px;
+  right: 95px;
+  //width: 300px;
+  //height: 40px;
+  background-color: $black;
+  //padding-bottom: 32px;
+  margin-top:  20px;
+}
+
+.bv-ul{
+  list-style-image: url('../img/icons/map-pin.svg');
+}
+
+.bv-pin li {
+    content: "";
+    display:inline-block;
+    height:1em;
+    width:1em;
+    background-size:contain;
+    background-repeat:no-repeat;
+    padding-left: 2em;
+ }
+/* ==========================================================================
+   Parallax
+   ========================================================================== */
+
+.bv-parallax{
+  background-attachment: fixed;
+  // background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+
+.bv-remove-bg{
+  background-image: none!important;
+}
+
+.bv-parallax{
+      background-attachment: scroll;
+      background-size: cover;
+
+  }
+}
+
+
+
+.bv-box-shadow{
+  box-shadow: 0 0 10px 0 rgba($black, .4);
+
+  &:hover {
+      box-shadow: 0 0 5px 0 rgba($black, .4);
+      //background-color: $bv-fontgrey;
+      //color: $white;
+     }
+}
+
+
+
+/* ==========================================================================
+   Slider
+   ========================================================================== */
+
+.bv-center{
+
+}
+
+.bv-slider{
+  position:relative;
+  margin:0 auto;
+  top:0px;
+  left:0px;
+  width: 100%;
+  overflow:hidden;
+  visibility:hidden;
+}
+
+.bv-slides-wrap{
+  cursor: pointer;
+  position:relative;
+  top:0px;
+  left:0px;
+  overflow:hidden;
+
+}
+
+.bv-slides{
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.bv-slider-title-wrap{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  //max-height: 900px;
+  color: $white;
+  @include bp($md){
+    height: 90%;
+
+    min-height: 85vh;
+    //padding: 160px;
+    max-height: none;
+  }
+  @include bp($lg){
+    height: 90%;
+
+    min-height: 85vh;
+    //padding: 160px;
+    max-height: none;
+  }
+  @include bp($xl){
+    height: 90%;
+    min-height: 85vh;
+    //padding: 160px;
+    max-height: none;
+  }
+}
+
+.bv-slider-title-ie{
+
+    position: absolute;
+    width: 100%;
+    padding: 20px 25px 20px;
+    bottom: 0px;
+
+    @include bp($lg){
+      width: 80%;
+      padding: 30px 40px 35px;
+      max-width: 997px;
+      bottom: 40px;
+  }
+    @include bp($xl){
+
+      width: 80%;
+      padding: 40px 60px 50px;
+      max-width: 997px;
+      bottom: 100px;
+    }
+    @include bp($xxxl){
+    width: 80%;
+    bottom: 40px;
+  }
+    @include bp($xxxxl){
+    width: 60%;
+    bottom: 40px;
+    }
+}
+
+.bv-slider-title{
+  position: absolute;
+  width: 100%;
+  padding: 20px 34px 55px;
+  left: 0px;
+  bottom: 40px;
+
+  @include bp($lg){
+    width: 80%;
+    padding: 30px 40px 35px;
+    max-width: 997px;
+    bottom: 100px;
+    left: auto;
+}
+  @include bp($xl){
+
+    width: 80%;
+    padding: 40px 60px 50px;
+    max-width: 997px;
+    bottom: 100px;
+    left: auto;
+  }
+  @include bp($xxxl){
+  width: 80%;
+  bottom: 100px;
+  left: auto;
+}
+  @include bp($xxxxl){
+  width: 60%;
+  bottom: 100px;
+  left: auto;
+  }
+}
+
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+   animation-name: jssorl-009-spin;
+   animation-duration: 1.6s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+ }
+   @keyframes jssorl-009-spin {
+     from { transform: rotate(0deg); }
+     to { transform: rotate(360deg); }
+   }
+
+ /*jssor slider bullet skin 051 css*/
+.jssorb051{
+  position: absolute;
+  bottom: 20px;
+  z-index: 99;
+  @include bp($md){
+    bottom: 15px;
+  }
+}
+.jssorb051 .i {position:absolute;cursor:pointer;}
+.jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+.jssorb051 .i:hover .b {fill-opacity:1;}
+.jssorb051 .iav .b {fill-opacity: 1;}
+.jssorb051 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+.bv-slider-arrow{
+  width:35px;
+  height:35px;
+  margin-top: 80%;
+  z-index: 99;
+  transform: scale(.3);
+  @include bp($lg){
+
+    margin-top: 0px;
+    width:55px;
+    height:55px;
+    transform: scale(.6);
+}
+  &--left{left:0; }
+  &--right{right:0;}
+}
+.bv-slider-arrows-viewbox{
+
+
+}
+
+
+
+
+
+/*********
+slider2
+********/
+
+.slideshow{
+           box-sizing: border-box;
+           width: 100%;
+           margin: 0 auto;
+          // padding: 20px 20px 40px;
+           border-radius: 4px;
+           position: relative;
+       }
+       .prev{font-size: 10px;}
+       .links{
+           position: absolute;
+           bottom: 10px;
+           display: flex;
+           width: 580px;
+           justify-content: center;
+
+           }
+       .links a {
+           display: block;
+           height: 12px;
+           width: 12px;
+           border: 1px solid #ccc;
+           border-radius: 20px;
+           margin: 3px;
+       }
+       .links a:hover, .links a:focus {
+
+           border: 1px solid #ccc;
+           background-color: #ccc;
+       }
+       .slides-container{
+           display: flex;
+           transition: all 0.3s ease-in-out;
+       }
+       .viewport{
+           overflow-x: hidden;
+           width: 100%;
+       }
+
+       .slide{
+         //width: 100%;
+           flex: 0 0 1000px;
+       }
+
+       img { width: 100%; }

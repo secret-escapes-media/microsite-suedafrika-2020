@@ -1,0 +1,39 @@
+
+
+- id: two
+  title: Panorama-Route
+  num: "2"
+
+  pois:
+
+    title:
+    items:
+
+      - title: Im hohen Norden
+        id: img1
+        caption:
+        content: "Startpunkt ist der äußerste Norden Irlands, im County Donegal. Die unberührte Gegend ist geographisch weitgehend isoliert vom Rest des Landes, bietet dafür aber Geschenke wie die Klippen von Slieve League, die mit 600 Metern zu den höchsten Klippen Europas gehören. Und darüber heißt es: Vorhang auf für Polarlichter, die oft den Himmel von Donegal&nbsp;veredeln."
+
+      - title: Von Malin Head nach Brow Head
+        id: img2
+        caption:
+        content: "Ob der Wild Atlantic Way die längste zusammenhängende Küstenstraße ist, sei dahingestellt. Die Fakten sprechen für sich: Über 2.500 km von Nord nach Süd, sechs Regionen, mehr als 500 Sehenswürdigkeiten und 50 Blue-Flag-Strände machen ihn zum Mekka für Roadtrip-Fans aller Fa­çon. Nationalparks, Surfspots, Berge, Wale und Delfine – so reich ist Irlands&nbsp;Westküste."
+
+      - title: Buchten für Ästhetiker
+        id: img3
+        caption:
+        content: "Thailand? Kroatien? Nein, es ist die irische Clew Bay, die mit über 140 Inseln und unzähligen Felsen jedem Besucher den Atem verschlägt. Das wilde Hinterland von Connemara gleich nebenan ließ auch schon Oscar Wilde das Herz stocken. Malerische Abteien, klare Seen und Naturidyll: Èire&nbsp;at&nbsp;its&nbsp;best."
+
+      - title: Klippen, die die Welt bedeuten
+        id: img4
+        content: "Willkommen bei Irlands Hauptattraktionen. Der Global Geopark ist UNESCO-Weltkulturerbe und erstreckt sich über 8 km entlang der Küste von Claire mit einmaligen Ausblicken von bis zu 241 über dem Meer. Eine perfekte Gelegenheit, um den Motor abzustellen und sich dem Naturschauspiel zwischen Land und Wellen zu widmen. Tipp: Kommen Sie nach 16 Uhr, wenn die Besucherströme verebbt und die Lichtbedingungen ideal&nbsp;sind."
+
+      - title: Ring of Kerry und die Halbinseln
+        id: img5
+        caption:
+        content: "Wo Kerry auf Cork trifft und fünf majestätische Halbinseln ins Meer ragen, lockt die Panoramastraße Ring of Kerry auf Iveragh. Passieren Sie die grünen Weiten des Killarney-Nationalparks, entdecken Sie Steinreihen und vergessen Sie nicht die Skelligs, allen voran Skellig Michael mit einem der bekanntesten Kloster Irlands – und Kulisse für Star&nbsp;Wars&nbsp;VIII."
+
+      - title: Südende und Fischerdorfidyll
+        id: img6
+        caption:
+        content: "Sie haben es geschafft. Entspannen Sie sich an den Blue-Flag-Stränden in West Cork, gehen Sie auf Geschmacksreise in Kinsale, der bunten Gourmethauptstadt Irlands und grüßen Sie den südwestlichsten Punkt der Insel, Mizen Head. Bis zum nächsten&nbsp;Mal."
