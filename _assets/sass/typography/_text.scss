@@ -8,6 +8,7 @@
   &--sm  { font-size: .8rem; }
 
   // styles
+  &--serif       { font-family: $serif; }
   &--italic       { font-style: italic; }
   &--light        { font-weight: 300; }
   &--normal       { font-weight: 400; }

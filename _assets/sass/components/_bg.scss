@@ -4,6 +4,7 @@
   &--white { background-color: $white; }
   &--light { background-color: $grey-lightest; }
   &--dark  { background-color: $grey-dark; }
+  &--turquoise  { background-color: $turquoise; }
   &--black  { background-color: rgba($black, .4);
     @include bp($lg){
       background-color: rgba($black, .7);

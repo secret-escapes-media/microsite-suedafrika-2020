@@ -9,17 +9,24 @@
 
     {% include page/header.html %}
 
+    {% if page.id == 'overview'  %}
+    {% include page/banner-video.html %}
+    {% else %}
     {% include page/banner.html %}
+    {% endif %}
 
     <div class="content-spacing section-spacing">
       {{ content }}
     </div>
 
-    {% include page/promo-signup.html %}
+    {% if page.layout == 'default'  %}
+      {% include page/promo-signup.html %}
+    {% endif %}
+
 
     {% include page/footer.html %}
 
-    {% include modal/modal.html %}
+    {% include modal/sections.html %}
 
   </body>
 

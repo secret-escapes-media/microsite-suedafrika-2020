@@ -78,8 +78,7 @@
 .banner-title {
 
   // custom banner headline
-  font-family: $sans;
-  text-transform: uppercase;
+  font-family: $serif;
   font-size: $s6;
   @include bp($md){ font-size: $s8; }
   @include bp($xl){ font-size: $s12; }

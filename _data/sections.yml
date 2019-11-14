@@ -1,0 +1,27 @@
+- id: one
+  title: Boulder’s Beach
+  description: "Hier posen Pinguine statt Menschen für Strandselfies: am Boulder Beach, auf dem Weg zum Kap der Guten Hoffnung. Etwas 2.500 Jackass- und Brillenpinguine erheitern Besucher, die sich am Abschnitt Foxy Beach den Tieren nähern können. Die drei malerischen Strände von Boulders Beach laden dabei auch zum Schwimmen ein."
+
+- id: two
+  title: "Tour durch Maboneng"
+  description: "In Maboneng, dem Szeneviertel Johannesburgs flanieren Sie zwischen Galerien, Cafés und Boutiquen. Im Kreativzentrum Arts on Main und der dazugehörigen Fox Street ist jeden Sonntag der Market on Main. Nicht nur ungewohnte Aromen und internationale Gerichte sind hier zu kosten; auch das Auge wird mit Kunst in jeglicher Form verwöhnt."
+
+- id: three
+  title: "Instagram Stop Blyde River Canyon"
+  description: "Alle, die ohne Instagram nicht reisen können, werden im Blyde River Canyon ein bezauberndes Motiv für ihre Instagram-Story finden. Die riesige grünen Schlucht hält mit God’s Window, The Pinnacle, The Potholes und mehr gleich mehrere unfassbare Ausblicke und Naturwunder bereit. Smartphones herbei!"
+
+- id: four
+  title: "Wanderung in den Drakensbergen"
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+
+- id: five
+  title: "Sundowner an den Augrabies Falls"
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+
+- id: six
+  title: "Namaqualand / West Coast NP"
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+
+- id: seven
+  title: Walbeobachtung
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"

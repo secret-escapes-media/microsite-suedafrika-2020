@@ -44,7 +44,8 @@ var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
         pixs = pixs / 60,
         offset = 600,
     //range = 100,
-        calc = 1 - (pixs )/10;
+        calc = 0.55 - (pixs )/25;
+        console.log(calc+' - '+pixs);
         //calc = 0 + (pixs )/10;
         //calc2 = 0 + pixs ;
 /*

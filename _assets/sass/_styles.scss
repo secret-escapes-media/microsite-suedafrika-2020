@@ -18,7 +18,7 @@
     font-weight: normal;
 }
 .accordion::after{
-  content: url(../img/icons/close.svg);
+  content: url(../img/icons/close-black.svg);
   transform: scale(.3) rotate(135deg);
   display: block;
   margin-top: -43px;
@@ -35,7 +35,7 @@
  }
 .bv-active::after {
   font-weight: bold;
-  content: url(../img/icons/close.svg);
+  content: url(../img/icons/close-black.svg);
   transform: scale(.3) rotate(0deg);
   margin-left: 95%;
   transition: all 0.5s ease-out;
