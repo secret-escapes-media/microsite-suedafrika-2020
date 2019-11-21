@@ -1,35 +1,17 @@
 ---
 layout: default
-banner:
-  content: >
-    <div class="container container--no-padding">
-      <div class="width width--xxl text--center">
-        <h1 class="title title--xxxl">{{page.long-title}}</h1>
-        <div class="space--sm"></div>
-        <a href="#entry-form" class="btn btn--lg btn--orange">{{page.enter-cta}}</a>
-      </div>
-    </div>
 ---
 
-<div class="bg--light">
+<div class="vpad--xxl text--white bg--turquoise">
   <div class="container">
-    <div class="space--xxl"></div>
-    <div class="width width--xl text--center">
-      <p class="text--xxl">{{page.intro}}</p>
+    <div class="width width--lg">
+       <div class="text text--xl text--center">
+         <h2 class="title title--lg text--bolder">{{page.intro-title}}</h2>
+         <div class="space--sm text--normal text--italic"> <p>{{page.intro}}</p></div>
+         <div class="space--lg"></div>
+        <a href="#entry-form" class="btn btn--lg btn--outline btn--outline-white">Jetzt teilnehmen</a>
+       </div>
     </div>
-    <div class="space--xl"></div>
-    <div class="row row--constant-4-4-4 row--gutters-sm">
-      <div class="col">
-        <div class="bg-img bg-img--1-1 bg-img--lg-4-3 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');"></div>
-      </div>
-      <div class="col">
-        <div class="bg-img bg-img--1-1 bg-img--lg-4-3 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');"></div>
-      </div>
-      <div class="col">
-        <div class="bg-img bg-img--1-1 bg-img--lg-4-3 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');"></div>
-      </div>
-    </div>
-    <div class="space--xxl"></div>
   </div>
 </div>
 
@@ -67,4 +49,10 @@ banner:
       </form>
     </div>
   </div>
+</div>
+
+<div class="container container--100 container--no-padding row row--constant-4-4-4 row--no-gutters">
+  <div class="col bg-img bg-img--1-1 bg-img--xxl-16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/one.jpg');"></div>
+  <div class="col bg-img bg-img--1-1 bg-img--xxl-16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/two.jpg');"></div>
+  <div class="col bg-img bg-img--1-1 bg-img--xxl-16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/three.jpg');"></div>
 </div>

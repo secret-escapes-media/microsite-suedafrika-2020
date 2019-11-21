@@ -20,13 +20,27 @@ page-nav:
   - id: three
     title: Italien
 
-summary: "Nirgendwo begegnet man sich selbst so sehr wie bei einem Roadtrip. Hinter dem Steuer ist jeder Tag eine neue Heraus&shy;forderung, keine Straße ist gleich und die schönsten Panoramen kommen oft unverhofft. Für die Abenteurer unter uns: Irlands Küste, Südafrikas Garden Route und Toskanas Welterbe-Städte – denn auch die Heldinnen und Helden der Hörbücher sind gerne&nbsp;unterwegs."
-cta: Weiter fahren
+summary: "Lorem ipsum dolor sit amet, consectetur adipisicing. Elit, dolor corrupti culpa labore aspernatur voluptates. Amet accusamus voluptas odit harum necessitatibus consequatur delectus rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+cta: "Mehr erfahren"
 
 intro-title: "Treibstoff für lange&nbsp;Wege"
 intro: "Der Tank ist voll, die nächste Ausfahrt weit und der Fuß auf dem Gas&shy;pedal. Kombinieren Sie Ihr Roadtrip-Erlebnis mit den Erfahrungen der Reisenden aus den folgenden Hörbüchern. Und erreichen Sie vor einzigartiger Kulisse und mit spannendem Zeit&shy;vertreib Ihr Ziel. "
 
 ---
+
+
+
+<div class="vpad--xxl text--white bg--turquoise">
+  <div class="container">
+    <div class="width width--lg">
+       <div class="text text--xl text--center">
+         <h2 class="title title--lg text--bolder">{{page.intro-title}}</h2>
+         <div class="space--sm text--normal text--italic"> <p>{{page.intro}}</p></div>
+       </div>
+    </div>
+  </div>
+</div>
+
 
 
 <script>
@@ -73,7 +87,6 @@ intro: "Der Tank ist voll, die nächste Ausfahrt weit und der Fuß auf dem Gas&s
 </script>
 
 
-{% if page.page-nav %}{% include nav/page.html %}{% endif %}
 
 <div id="bv-roadtrips">
 {% include page/reiserouten/reiserouten1.html %}

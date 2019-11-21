@@ -1,27 +1,41 @@
 - id: one
-  title: Boulder’s Beach
-  description: "Hier posen Pinguine statt Menschen für Strandselfies: am Boulder Beach, auf dem Weg zum Kap der Guten Hoffnung. Etwas 2.500 Jackass- und Brillenpinguine erheitern Besucher, die sich am Abschnitt Foxy Beach den Tieren nähern können. Die drei malerischen Strände von Boulders Beach laden dabei auch zum Schwimmen ein."
+  layer: "z-index: 13;"
+  title: Mehr als die Big Five
+  rotation: "transform: rotate(-10deg);"
+  description: "Auf Meer-Safari begegnen Sie neben Haien und Walen auch Delfinen, Robben und Pinguinen. Antilopen und Giraffen sind oft an der Tagesordnung, ebenso Zebras. Hunderte von Vogelarten und Schmetterlingsarten machen schließlich Südafrika attraktiv für jede Art von Tierfreund."
 
 - id: two
-  title: "Tour durch Maboneng"
-  description: "In Maboneng, dem Szeneviertel Johannesburgs flanieren Sie zwischen Galerien, Cafés und Boutiquen. Im Kreativzentrum Arts on Main und der dazugehörigen Fox Street ist jeden Sonntag der Market on Main. Nicht nur ungewohnte Aromen und internationale Gerichte sind hier zu kosten; auch das Auge wird mit Kunst in jeglicher Form verwöhnt."
+  layer: "z-index: 12;"
+  title: "Safari das ganze Jahr über"
+  rotation: "transform: rotate(10deg);"
+  description: "Das ganze Jahr ist Safari-Zeit. Während Juli und August sich besonders im Krüger-NP für Wildtierbeobachtung eignen, ist die Wüstenlandschaft eines Kgalagadi Transfrontier Park im Herbst oder Winter ideal. Im Frühjahr ist der malariafreie Addo-Park der richtige Ort."
 
 - id: three
-  title: "Instagram Stop Blyde River Canyon"
-  description: "Alle, die ohne Instagram nicht reisen können, werden im Blyde River Canyon ein bezauberndes Motiv für ihre Instagram-Story finden. Die riesige grünen Schlucht hält mit God’s Window, The Pinnacle, The Potholes und mehr gleich mehrere unfassbare Ausblicke und Naturwunder bereit. Smartphones herbei!"
+  layer: "z-index: 11;"
+  title: "Geführter Game Drive"
+  rotation: "transform: rotate(-5deg);"
+  description: "Der Safari-Klassiker ist geführt mit einem ausgebildeten Ranger im Geländewagen. Diese bereichern Ihre Wildtierbeobachtung mit reichlich Hintergrundwissen und können ggf. in kritischen Situationen eingreifen."
 
 - id: four
-  title: "Wanderung in den Drakensbergen"
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+  layer: "z-index: 14;"
+  title: "Self-Drive"
+  rotation: "transform: rotate(5deg);"
+  description: "Aber auch selbstständig können Sie auf die Pirsch, dies jedoch nur auf vorgeschriebenen Wegen in den Nationalparks. Private Wildparks sind von dieser Regelung leider ausgeschlossen."
 
 - id: five
-  title: "Sundowner an den Augrabies Falls"
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+  layer: "z-index: 15;"
+  title: "Walking Safari"
+  rotation: "transform: rotate(-2deg);"
+  description: "Sie können gar nicht nah genug an die Tiere herantreten? Eine Buschwanderung zu Fuß ist das Richtige. Ein bewaffneter Ranger begleitet Sie und weist Sie in die Kunst des Spurenlesens ein. Je nach Angebot können Sie im Freien campen oder von Fahrzeugen begleitet werden. Was für ein Adrenalinrausch!"
 
 - id: six
-  title: "Namaqualand / West Coast NP"
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+  layer: "z-index: 16;"
+  title: "Staatliche Nationalparks"
+  rotation: "transform: rotate(8deg);"
+  description: "Die 19 Nationalparks werden von einer Reihe staatlicher Parks ergänzt, die in KwaZulu Natal und North West lokal gemanagt werden. Eintrittskosten und Übernachtungspreise in den restcamps sind sehr moderat gehalten, auch als Individualreisende kann man die PArks erkunden."
 
 - id: seven
-  title: Walbeobachtung
-  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+  layer: "z-index: 17;"
+  title: Private Game Reserves
+  rotation: "transform: rotate(2deg);"
+  description: "In einer der vielen privaten Game Lodges können Sie eine Pirschfahrt mit einem Aufenthalt im Luxuszelt same Lagerfeuer-Dinner erleben. Dabei können die Ranger von den vorgeschriebenen Wegen abfahren und den Tieren näher kommen. Meistens sind zwei geführte Fahrten pro Tag im Preis inbegriffen."

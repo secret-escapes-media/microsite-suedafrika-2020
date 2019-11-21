@@ -2,9 +2,9 @@
 layout: default
 id: wildlife
 title: Wildlife
-nav: true
+nav: false
 nav-order: 3
-content-pages: true
+content-pages: false
 
 banner:
   title: Wildlife & Safari
@@ -79,7 +79,7 @@ safaris:
 </div>
 
 {% for park in page.parks.items %}
-    <div class="harvey{% cycle '', ' harvey--swap bg--darker text--white' %}">
+    <div id="{{page.id}}" class="harvey{% cycle '', ' harvey--swap bg--darker text--white' %}">
       <div class="harvey__img" style="background-image: url('{{site.img}}/content/{{page.id}}/parks/{{park.id}}.jpg');"></div>
       <div class="harvey__text boxpad--lg text text--xxl">
         <h2 class="title title--sm text--bolder text--upper">{{park.title}}</h2>
@@ -109,18 +109,18 @@ safaris:
  </div>
 
 
- <div class="bg--light" style="background-image:url({{site.img}}/content/{{page.id}}/safari/bg-pattern_.jpg); background-repeat:no-repeat; background-size:cover; background-position: top center;">
+ <div class="" style="background-image:url({{site.img}}/content/{{page.id}}/safari/bg-pattern.jpg); background-repeat:no-repeat; background-size:cover; background-position: top center;">
   <div class="container">
     <div class="space--xxl"></div>
-      <div class="row row--xl-4-4-4 row--lg-6-6 row--gutters-md " >
+      <div class="row row--xl-4-4-4 row--lg-6-6 row--gutters-sm " >
       {% for safari in site.data.sections %}
         <div class="col">
-          <div id="tracking-poi-{{poi.id}}" class="bg--white bv-thumb-zoom js-open-modal boxpad--md " data-open-modal="{{safari.id}}" style="cursor: pointer; {{safari.layer}} {{safari.rotation}} ">
-            <div class="bg-img bg-img--4-3 bg-img--md-1-1 bg-img--lg-1-1 bv-thumb-vignette" style="background-image: url('{{site.img}}/content/wildlife/safari/{{safari.id}}.jpg');"></div>
-            <div class="space--sm"></div>
-            <div class="vpad--xxs bg--white text text--serif text--xxl text--center">{{safari.title}}</div>
+          <div  id="tracking-poi-{{poi.id}}" class="bg--turquoise bv-box-shadow js-open-modal {{safari.rotation}}" data-open-modal="{{safari.id}}" style="cursor: pointer;">
+            <div class="outer-div ">
+              <div class="inner-div bg-img bg-img--16-9 bg-img--md-1-1 bg-img--lg-4-3" style="background-image: url('{{site.img}}/content/wildlife/safari/{{safari.id}}.jpg'); ">  </div>
+            </div>
+            <div class="bg--darker text text--white text--xl text--center text--upper text--bolder boxpad--sm">{{safari.title}}</div>
           </div>
-          <div class="space--sm"></div>
         </div>
       {% endfor %}
 

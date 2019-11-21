@@ -16,7 +16,7 @@ for (i = 0; i < coll.length; i++) {
       content.style.height = null;
 
     } else {
-      content.style.height = "550px";
+      content.style.height = "500px";
       //content.style.minHeight = "400px";
       content.style.overflow = "auto";
     }
@@ -31,20 +31,16 @@ for (i = 0; i < coll.length; i++) {
 
 $(window).on('scroll', function () {
 
-  if($(window).scrollTop() > 200) {
-         $(".bv-title-yellow").addClass("text--yellow");
-     } else {
-         //remove the background property so it comes transparent again (defined in your css)
-        $(".bv-title-yellow").removeClass("text--yellow");
-     }
 
 var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
     var pixs = $(document).scrollTop(),
         pixs = pixs / 60,
-        offset = 600,
-    //range = 100,
+        pixs2 = pixs / 30,
+        offset = 800,
+        offset2 = 1100,
         calc = 0.55 - (pixs )/25;
+        //calc2 = 0.55 - (pixs2 )/25;
         console.log(calc+' - '+pixs);
         //calc = 0 + (pixs )/10;
         //calc2 = 0 + pixs ;
@@ -59,8 +55,10 @@ var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
 	if(isFirefox === false){
     $(".bv-banner-out").css({ "-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)","opacity": calc });
+    $(".bv-banner-out2").css({ "-webkit-filter": "blur("+pixs2+"px)","filter": "blur("+pixs2+"px)","opacity": calc2 });
   } else {
     $(".bv-banner-out").css({"opacity": calc });
+    $(".bv-banner-out2").css({"opacity": calc });
   }
 
 

@@ -4,10 +4,12 @@
   &--white { background-color: $white; }
   &--light { background-color: $grey-lightest; }
   &--dark  { background-color: $grey-dark; }
+  &--darker  { background-color: $grey-darker; }
   &--turquoise  { background-color: $turquoise; }
-  &--black  { background-color: rgba($black, .4);
+  &--turquoise-light  { background-color: $turquoise-light; }
+  &--black  { background-color: rgba($black, 1);
     @include bp($lg){
-      background-color: rgba($black, .7);
+      background-color: rgba($black, 1);
     }
   }
   &--img   { @include background-attributes; }

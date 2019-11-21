@@ -34,6 +34,8 @@
     color: $grey-dark;
     background-color: $white;
     padding: $s2 $s3;
+    //overflow: auto;
+    //height: 70vh;
   }
   &__close {
     position: absolute;
@@ -126,6 +128,7 @@
   @include bp($lg){
     &__content {
       padding: $s4 $s6;
+      //height: 60vh;
     }
   };
 }

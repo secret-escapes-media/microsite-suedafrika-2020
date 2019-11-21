@@ -101,50 +101,25 @@
    Gallery - Thumbnails
    ========================================================================== */
 
-.bv-thumb-vignette{
+.outer-div {
+  overflow: hidden;
+}
+
+.inner-div {
   background-size: cover;
-  display: block;
+  background-position: center;
+  transition: all 0.5s ease;
+    transform: scale(1.05);
+  opacity: 1;
+  //filter: blur(0px);
 }
 
-.bv-thumb-vignette:after{
-  content: '';
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  background: radial-gradient(circle, transparent 50%, black 160%);
+.inner-div:hover {
+  transform: scale(1.15);
+  opacity: .4;
+  //filter: blur(1px);
 }
 
-.bv-box-shadow{
-  box-shadow: 0 0 5px 0 rgba($black, .3);
-
-  &:hover {
-    box-shadow: 0 0 15px 0 rgba($black, .4);
-    }
-}
-
-
-.bv-thumb-zoom{
-  box-shadow: 0 0 5px 0 rgba($black, .3);
-
-  @include bp($lg){
-      box-shadow: 0 0 5px 0 rgba($black, .3);
-  }
-
-  &:hover {
-    box-shadow: 0 0 45px 0 rgba($black, .4);
-    transform: scale(1.1,1.1) rotate(0deg)!important;
-    transition: all 0.2s ease-out;
-    z-index: 999!important;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-
-  .bv-thumb-zoom{
-    box-shadow: 0 0 5px 0 rgba($black, .3);
-    transform: rotate(0deg)!important;
-  }
-
-}
 
 /* ==========================================================================
    Parallax
@@ -167,6 +142,18 @@
       background-size: cover;
 
   }
+}
+
+.bv-box-shadow{
+  box-shadow: 0 0 15px 0 rgba($black, .3);
+  //border-bottom: 2px solid rgba($white, .8);
+
+  &:hover {
+    box-shadow: 0 0 5px 0 rgba($black, .4);
+    // border-bottom: 1px solid rgba($black, .3);
+      //background-color: $bv-fontgrey;
+      //color: $white;
+     }
 }
 
 

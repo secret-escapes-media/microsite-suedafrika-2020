@@ -1,12 +1,12 @@
 
 {% for section in site.data.reiserouten3 %}
 
-<div class="vpad--lg bg--white" id="{{section.id}}">
+<div class="vpad--lg bg--light" id="{{section.id}}">
     <div class="container">
       <div class="space--xl"></div>
     <div class="width width--xxl">
        <div class="text text--xl text--center">
-         <h2 class="title title--md text--semibold text--upper text--bv-grey">{{section.title}}</h2>
+         <h2 class="title title--lg text--bold">{{section.title}}</h2>
        </div>
     </div>
   </div>
@@ -20,10 +20,10 @@
        <div data-u="slides3" class="bv-slides-wrap" id="bv-wrap3" >
            {% for poi in section.pois.items %}
            <div>
-               <div class="bv-slides bv-js-slides3" data-u="image3" style="background-image: url('{{site.img}}/content/{{page.id}}/slider3/{{poi.id}}.jpg'); background-size: cover; background-position: center bottom!important; ">
-                 <div class="bv-slider-title-wrap bv-js-slider3-title-wrap text--white" >
-                      <div class=" text--left bv-slider-title bv-js-slider3-title bg--black">
-                        <h1 class="title title--xxs text--semibold text--upper  ">{{poi.title}}</h1>
+               <div class="bv-slides bv-js-slides" data-u="image3" style="background-image: url('{{site.img}}/content/{{page.id}}/slider3/{{poi.id}}.jpg'); background-size: cover; background-position: center bottom!important; ">
+                 <div class="bv-slider-title-wrap bv-js-slider-title-wrap text--white" >
+                      <div class="text--left text--black bv-slider-title bv-js-slider-title bg--white">
+                        <h1 class="title title--xxs text--bold text--upper  ">{{poi.title}}</h1>
                         <p class="text text--lg ">{{poi.content}}</p>
                       </div>
                   </div>

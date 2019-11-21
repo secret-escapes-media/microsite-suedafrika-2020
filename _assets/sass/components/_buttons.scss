@@ -21,6 +21,7 @@
   }
   &--outline {
     color: inherit;
+    //background-color: $white;
     &:before {
       // button border within original padding
       content: '';
@@ -35,7 +36,15 @@
       @include transition;
     }
   }
-  &--outline-orange { color: $orange;
+  &--outline-white { //color: $orange;
+    &:before { border-color: $white;}
+    &:hover {
+      color: $black;
+      background-color: $white;
+      &:before { border-color: $white; }
+    }
+  }
+  &--outline-orange { //color: $orange;
     &:before { border-color: $orange;}
     &:hover {
       color: $white;
@@ -43,7 +52,7 @@
       &:before { border-color: $orange; }
     }
   }
-  &--outline-turquoise { color: $turquoise;
+  &--outline-turquoise {// color: $turquoise;
     &:before { border-color: $turquoise; }
     &:hover {
       color: $white;

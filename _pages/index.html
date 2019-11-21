@@ -12,17 +12,26 @@ banner:
   title-size: banner-title--xl
 
 
-summary: "Kein Wunder, dass der Strand ein Klassiker unter den Urlaubszielen ist. Ewig locken Meer und Sand – und doch zeigen sie sich stets unterschiedlich. Zum Beweis präsentieren wir hier sieben beliebte Beach-Destinationen weltweit: Von der Karibik bis zum Indischen Ozean, von schwarzen Vulkanstränden bis zu Puder&shy;zuckersand unter Palmen. Passend zum Blick bis zum Horizont gibt es drei Hörausflüge für Perspektiv&shy;erweiterung im&nbsp;Urlaub."
-cta: Sonne tanken
+summary: "Lorem ipsum dolor sit amet, consectetur adipisicing. Elit, dolor corrupti culpa labore aspernatur voluptates. Amet accusamus voluptas odit harum necessitatibus consequatur delectus rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
 
-intro-title: "Wolkenfrei mit Aussicht auf&nbsp;Hörspaß"
-intro: "Im Blick: nichts als Sandstrand und tiefblaues Meer (und ein wenig Palmen&shy;grün, Dünen&shy;gras oder Felsen&shy;klippen). Auf der Haut: Meeres&shy;brise und Sonnen&shy;strahlen. Im Ohr: Kurzweil mit Spannung für Ent&shy;spannung dank dieser Hörbücher."
+intro-title: "Lorem ipsum dolor sit amet"
+intro: "Lorem ipsum dolor sit amet, consectetur adipisicing. Elit, dolor corrupti culpa labore aspernatur voluptates. Amet accusamus voluptas odit harum necessitatibus consequatur delectus rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
 
 ---
 
+<div class="vpad--xxl text--white bg--turquoise">
+  <div class="container">
+    <div class="width width--lg">
+       <div class="text text--xl text--center">
+         <h2 class="title title--lg text--bolder">{{page.intro-title}}</h2>
+         <div class="space--sm text--normal text--italic"> <p>{{page.intro}}</p></div>
+       </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="container vpad--xxl">
-
 
   {% assign destinations = site.html_pages | where: 'content-pages', 'true'  | sort:'nav-order' %}
 
@@ -30,15 +39,15 @@ intro: "Im Blick: nichts als Sandstrand und tiefblaues Meer (und ein wenig Palme
 
   <div class="bob {% cycle '', 'bob--swap' %}">
     <div class="bob__img">
-      <a href="{{site.baseurl}}{{destination.url}}" class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{destination.id}}/hero.jpg');"></a>
+      <a href="{{site.baseurl}}{{destination.url}}" class="bg-img bg-img--4-3 bv-box-shadow" style="background-image: url('{{site.img}}/content/{{destination.id}}/hero.jpg');"></a>
     </div>
     <div class="bob__text ">
       <div class="space--sm"></div>
-      <h2 class="title title--xs text--bold text--upper">{{destination.title}}</h2>
+      <h2 class="title title--sm text--bolder text--upper">{{destination.title}}</h2>
       <div class="space--xxs"></div>
       <p class="text text--lg ">{{destination.summary}}</p>
       <div class="space--lg"></div>
-      <a href="{{site.baseurl}}{{destination.url}}" class="btn btn--outline btn--outline-orange">{{destination.cta}}</a>
+      <a href="{{site.baseurl}}{{destination.url}}" class="btn btn--orange">{{destination.cta}}</a>
     </div>
   </div>
 

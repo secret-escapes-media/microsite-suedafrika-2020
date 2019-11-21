@@ -1,12 +1,12 @@
 {% for section in site.data.reiserouten1 %}
 
 
-<div class="vpad--lg bg--white" id="{{section.id}}">
+<div class="vpad--lg bg--light" id="{{section.id}}">
     <div class="container">
       <div class="space--xl"></div>
     <div class="width width--xxl">
        <div class="text text--xl text--center">
-         <h2 class="title title--md text--semibold text--upper text--bv-grey">{{section.title}}</h2>
+         <h2 class="title title--lg text--bold">{{section.title}}</h2>
        </div>
     </div>
   </div>
@@ -14,16 +14,16 @@
 
 
 
-<div id="jssor_1" class="bv-slider" >
+<div id="jssor_1" class="bv-slider">
        <!-- Loading Screen -->
 
        <div data-u="slides" class="bv-slides-wrap" >
            {% for poi in section.pois.items %}
            <div>
                <div class="bv-slides" data-u="image" style="background-image: url('{{site.img}}/content/{{page.id}}/slider{{section.num}}/{{poi.id}}.jpg'); background-size: cover; background-position: center bottom;">
-                 <div class="bv-slider-title-wrap text--white" >
-                      <div class=" text--left bv-slider-title bg--black">
-                        <h1 class="title title--xxs text--semibold text--upper  ">{{poi.title}}</h1>
+                 <div class="bv-slider-title-wrap" >
+                      <div class="text--left text--black bv-slider-title bg--white bv-box-shadow">
+                        <h1 class="title title--xxs text--bold text--upper">{{poi.title}}</h1>
                         <p class="text text--lg ">{{poi.content}}</p>
                       </div>
                   </div>

@@ -7,11 +7,11 @@
   line-height: 1.2;
   &--xxxl   { font-size: $s8; }
   &--xxl    { font-size: $s7; }
-  &--xl     { font-size: $s6; }
+  &--xl     { font-size: $s5; }
   &--lg     { font-size: $s5; }
   &--md     { font-size: $s4; }
   &--sm     { font-size: $s3; }
-  &--xs     { font-size: $s2; }
+  &--xs     { font-size: $s1; }
   &--xxs    { font-size: $s1; }
   &--xxxs   { font-size: $s0; }
   @include bp($lg){
