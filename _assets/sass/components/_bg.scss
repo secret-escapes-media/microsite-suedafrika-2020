@@ -7,6 +7,7 @@
   &--darker  { background-color: $grey-darker; }
   &--turquoise  { background-color: $turquoise; }
   &--turquoise-light  { background-color: $turquoise-light; }
+  &--blue-grey  { background-color: $bv-bluegrey; }
   &--black  { background-color: rgba($black, 1);
     @include bp($lg){
       background-color: rgba($black, 1);

@@ -1,22 +1,57 @@
 ---
 layout: default
+
 ---
 
-<div class="vpad--xxl text--white bg--turquoise">
+
+<div class="vpad--xxl bg--light bv-parallax" style="background-image: url('{{site.img}}/icons/bg-pattern-transp-2000px.png');">
   <div class="container">
     <div class="width width--lg">
-       <div class="text text--xl text--center">
+       <div class="text text--xxxl text--justify">
          <h2 class="title title--lg text--bolder">{{page.intro-title}}</h2>
-         <div class="space--sm text--normal text--italic"> <p>{{page.intro}}</p></div>
-         <div class="space--lg"></div>
-        <a href="#entry-form" class="btn btn--lg btn--outline btn--outline-white">Jetzt teilnehmen</a>
+         <div class="space--sm text--normal text--center"> <p>{{page.intro}}</p></div>
+         <div class="space--sm"></div>
+         <div class="space--lg text--center">
+        <a href="#entry-form" class="btn btn--lg btn--turquoise ">Jetzt teilnehmen</a></div>
        </div>
     </div>
   </div>
 </div>
 
-<div class="vpad--xl">
+<div class=" vpad--xxl">
   <div class="container">
+    {% for prize in page.prizes %}
+    <div class="bob  {% cycle "", " bob--swap" %}  vpad--xxs">
+      <div class="bob__img">
+        <a href="#enter"  class="bg-img bg-img--4-3" style="background-image:url({{site.img}}/content/gewinnspiel/{{prize.id}}.jpg);" ></a>
+      </div>
+
+      <div class="bob__text text--lg">
+        <h3 class="title title--sm text--bolder">{{prize.title}}</h3>
+        <div class="space--xs"></div>
+        {{prize.content}}
+        <div class="space--lg"></div>
+        <a href="#enter" class="btn btn--turquoise">{{prize.enter-cta}}</a>
+        {% if prize.external-cta %}
+  <a href="{{prize.external-link}}" target="_blank" class="btn  btn--outline btn--outline-turquoise" style="">{{prize.external-cta}}</a>
+{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+
+<!-- Competition Form ---->
+
+
+
+<div class="vpad--xxl bg--light bv-parallax" style="background-image: url('{{site.img}}/icons/bg-pattern-transp-2000px.png');">
+  <div class="container">
+    <div id="enter"></div>
+    <h3 class="title title--xl text--bolder text--center">Nehmen Sie jetzt <br>am Gewinnspiel teil</h3>
+    <div class="space--xl"></div>
     <div id="entry-form" class="vpad--md">
       {% assign form = page.competition-form %}
       <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
@@ -50,9 +85,12 @@ layout: default
     </div>
   </div>
 </div>
-
-<div class="container container--100 container--no-padding row row--constant-4-4-4 row--no-gutters">
-  <div class="col bg-img bg-img--1-1 bg-img--xxl-16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/one.jpg');"></div>
-  <div class="col bg-img bg-img--1-1 bg-img--xxl-16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/two.jpg');"></div>
-  <div class="col bg-img bg-img--1-1 bg-img--xxl-16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/three.jpg');"></div>
+<div class="vpad--xxxxl bg--img" style="background-image: url('{{site.img}}/content/gewinnspiel/banner.jpg'); background-position: center 20%;">
+  <div class="container container--xl">
+    <div class="text--center text--white">
+<div class="space--xxxl"></div>
+<div class="space--xxxl"></div>
+<div class="space--xxxl"></div>
+    </div>
+  </div>
 </div>

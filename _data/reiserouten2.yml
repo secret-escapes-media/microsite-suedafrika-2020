@@ -1,7 +1,8 @@
 
 
 - id: two
-  title: Panorama-Route
+  title: "Umwerfend: Panorama-Route"
+  intro: "Etwas kürzer ist die Panorama-Route, die durch die Drakensberge in der Provinz Mpumalanga führt. Hier wird auf natürliche Weise das Highveld von der etwa 1000 Meter tiefer gelegenen Ebene, dem Lowveld getrennt. Auf kleinem Raum versammeln sich etliche Naturschauspiele, die bequem an einem Tag zu besichtigen&nbsp;sind."
   num: "2"
 
   pois:
@@ -9,31 +10,18 @@
     title:
     items:
 
-      - title: Im hohen Norden
+      - title: "Sabie & Wasserfälle"
         id: img1
-        caption:
-        content: "Startpunkt ist der äußerste Norden Irlands, im County Donegal. Die unberührte Gegend ist geographisch weitgehend isoliert vom Rest des Landes, bietet dafür aber Geschenke wie die Klippen von Slieve League, die mit 600 Metern zu den höchsten Klippen Europas gehören. Und darüber heißt es: Vorhang auf für Polarlichter, die oft den Himmel von Donegal&nbsp;veredeln."
+        content: "Das Kernstück der Panorama Route führt am Blyde River Canyon entlang und kann vom Dörfchen Sabie im Osten angefahren werden. Die Umgebung reizt mit Wasserfällen wie den Bridal Veil Falls oder dem Zwillingswasserfall Mac Mac Falls. Aus einer Höhe von 56 Metern fällt das Wasser und bildet die Mac Mac Pools, natürliche Schwimmbecken voll mit klarem Wasser."
 
-      - title: Von Malin Head nach Brow Head
+      - title: Blyde River Canyon & God’s Window
         id: img2
-        caption:
-        content: "Ob der Wild Atlantic Way die längste zusammenhängende Küstenstraße ist, sei dahingestellt. Die Fakten sprechen für sich: Über 2.500 km von Nord nach Süd, sechs Regionen, mehr als 500 Sehenswürdigkeiten und 50 Blue-Flag-Strände machen ihn zum Mekka für Roadtrip-Fans aller Fa­çon. Nationalparks, Surfspots, Berge, Wale und Delfine – so reich ist Irlands&nbsp;Westküste."
+        content: "Nach Graskop beginnt der spannendste Abschnitt der Route, das Blyde River Canyon Gebiet. Wenige Aussichtspunkte weltweit können gefühlt mit diesem hier mithalten: God’s Window, wo sich ein weiter Blick eröffnet über den Canyon und über den Blyde River, der sich zwischen den Bergkuppen schlängelt bis hin zu den Lowvelds, welche in der Ferne hervorscheinen. Erhaben."
 
-      - title: Buchten für Ästhetiker
+      - title: "Three Rondavels"
         id: img3
-        caption:
-        content: "Thailand? Kroatien? Nein, es ist die irische Clew Bay, die mit über 140 Inseln und unzähligen Felsen jedem Besucher den Atem verschlägt. Das wilde Hinterland von Connemara gleich nebenan ließ auch schon Oscar Wilde das Herz stocken. Malerische Abteien, klare Seen und Naturidyll: Èire&nbsp;at&nbsp;its&nbsp;best."
+        content: "Weitere “Oohs” und “Aahs” entlockt folgendes Naturwunder: Bourke’s Luck Potholes. Der Namensgeber war ein glücklicher Goldgräber, die Potholes sind eigentümliche Strudellöcher im Festgestein. Beeindruckende Blicke ins Land werfen Sie danach auf die Three Rondavels, Canyon-Formartionen, die wie traditionelle Rundhütten anmuten. Hier ist der Blyde River Canyon zu Ende."
 
-      - title: Klippen, die die Welt bedeuten
+      - title: Pilgrim’s Rest
         id: img4
-        content: "Willkommen bei Irlands Hauptattraktionen. Der Global Geopark ist UNESCO-Weltkulturerbe und erstreckt sich über 8 km entlang der Küste von Claire mit einmaligen Ausblicken von bis zu 241 über dem Meer. Eine perfekte Gelegenheit, um den Motor abzustellen und sich dem Naturschauspiel zwischen Land und Wellen zu widmen. Tipp: Kommen Sie nach 16 Uhr, wenn die Besucherströme verebbt und die Lichtbedingungen ideal&nbsp;sind."
-
-      - title: Ring of Kerry und die Halbinseln
-        id: img5
-        caption:
-        content: "Wo Kerry auf Cork trifft und fünf majestätische Halbinseln ins Meer ragen, lockt die Panoramastraße Ring of Kerry auf Iveragh. Passieren Sie die grünen Weiten des Killarney-Nationalparks, entdecken Sie Steinreihen und vergessen Sie nicht die Skelligs, allen voran Skellig Michael mit einem der bekanntesten Kloster Irlands – und Kulisse für Star&nbsp;Wars&nbsp;VIII."
-
-      - title: Südende und Fischerdorfidyll
-        id: img6
-        caption:
-        content: "Sie haben es geschafft. Entspannen Sie sich an den Blue-Flag-Stränden in West Cork, gehen Sie auf Geschmacksreise in Kinsale, der bunten Gourmethauptstadt Irlands und grüßen Sie den südwestlichsten Punkt der Insel, Mizen Head. Bis zum nächsten&nbsp;Mal."
+        content: "Wenn Sie den Rückweg zum Ausgangspunkt der Route antreten, kommen Sie am bekannten Goldgräberdorf in Mpumalanga vorbei. In Pilgrim’s Rest wurden 1873 erhebliche Goldfunde gemacht, was Goldgräber aus der ganzen Welt anlockte. Wer nicht genug von Wasserfällen bekommt, sollte die Route mit den Berlin Falls abschließen, und staunen wie dort das Wasser kerzenförmig herabfällt."

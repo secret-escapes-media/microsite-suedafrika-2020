@@ -12,79 +12,20 @@ banner:
   title-size: banner-title--xl
   bg-hero: "background-position: 30% center;"
 
-page-nav:
-  - id: one
-    title: Südafrika
-  - id: two
-    title: Irland
-  - id: three
-    title: Italien
 
-summary: "Lorem ipsum dolor sit amet, consectetur adipisicing. Elit, dolor corrupti culpa labore aspernatur voluptates. Amet accusamus voluptas odit harum necessitatibus consequatur delectus rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+summary: "Viele Wege führen nach Rom, noch mehr führen zum südafrikanischen Reiseglück. Von der klassischen Garden Route über einen tageslangen Canyon-Roadtrip bis zum Geheimtipp Elephant Coast: so entdecken Sie Südafrika auf vier Rädern."
 cta: "Mehr erfahren"
 
-intro-title: "Treibstoff für lange&nbsp;Wege"
-intro: "Der Tank ist voll, die nächste Ausfahrt weit und der Fuß auf dem Gas&shy;pedal. Kombinieren Sie Ihr Roadtrip-Erlebnis mit den Erfahrungen der Reisenden aus den folgenden Hörbüchern. Und erreichen Sie vor einzigartiger Kulisse und mit spannendem Zeit&shy;vertreib Ihr Ziel. "
+intro-title: ""
+intro: "Die beste Art, viele Highlights in einer Reise abzudecken ist immer noch der Roadtrip. Hierfür ist Südafrika prädestiniert und neben der klassischen Gardenroute gibt es mindestens noch zwei weitere Routen, die Ihnen den Atem verschlagen werden.  "
 
 ---
 
 
 
-<div class="vpad--xxl text--white bg--turquoise">
-  <div class="container">
-    <div class="width width--lg">
-       <div class="text text--xl text--center">
-         <h2 class="title title--lg text--bolder">{{page.intro-title}}</h2>
-         <div class="space--sm text--normal text--italic"> <p>{{page.intro}}</p></div>
-       </div>
-    </div>
-  </div>
-</div>
 
 
 
-<script>
-
-    var bvOverlay4 = document.getElementById("bv-overlay-4");
-    var bvOverlay5 = document.getElementById("bv-overlay-5");
-    var bvOverlay6 = document.getElementById("bv-overlay-6");
-
-    var bvCaption4 = document.getElementById("bv-caption-4");
-    var bvCaption5 = document.getElementById("bv-caption-5");
-    var bvCaption6 = document.getElementById("bv-caption-6");
-
-
-
-     bvOverlay4.onmouseover = function() {
-       bvCaption4.style.visibility = "visible";
-     }
-     bvOverlay4.onmouseout = function() {
-       bvCaption4.style.visibility = "hidden";
-     }
-
-     bvOverlay5.onmouseover = function() {
-       bvCaption5.style.visibility = "visible";
-     }
-     bvOverlay5.onmouseout = function() {
-       bvCaption5.style.visibility = "hidden";
-     }
-
-     bvOverlay5.onmouseover = function() {
-       bvCaption5.style.visibility = "visible";
-     }
-     bvOverlay5.onmouseout = function() {
-       bvCaption5.style.visibility = "hidden";
-     }
-
-     bvOverlay6.onmouseover = function() {
-       bvCaption6.style.visibility = "visible";
-     }
-     bvOverlay6.onmouseout = function() {
-       bvCaption6.style.visibility = "hidden";
-     }
-
-
-</script>
 
 
 
@@ -95,11 +36,15 @@ intro: "Der Tank ist voll, die nächste Ausfahrt weit und der Fuß auf dem Gas&s
 </div>
 
 <div id="bv-road-ie">
-
   {% include page/reiserouten/reiserouten1-ie.html %}
   {% include page/reiserouten/reiserouten2-ie.html %}
   {% include page/reiserouten/reiserouten3-ie.html %}
 </div>
+
+<div class="space--lg bg--light"></div>
+
+{% include page/empfehlung.html %}
+
 <script>
   var elem = document.getElementById("bv-road-ie");
   var elem2 = document.getElementById("bv-roadtrips");

@@ -4,53 +4,53 @@ id: overview
 nav: true
 nav-order: 1
 title: Übersicht
-intro: this is my home page
 
 banner:
   title: Südafrika
-  title-sup: Aufregend anders
+  title-sub: Auf Safari in der Regenbogen-Nation
   title-size: banner-title--xl
 
 
-summary: "Lorem ipsum dolor sit amet, consectetur adipisicing. Elit, dolor corrupti culpa labore aspernatur voluptates. Amet accusamus voluptas odit harum necessitatibus consequatur delectus rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
-
-intro-title: "Lorem ipsum dolor sit amet"
-intro: "Lorem ipsum dolor sit amet, consectetur adipisicing. Elit, dolor corrupti culpa labore aspernatur voluptates. Amet accusamus voluptas odit harum necessitatibus consequatur delectus rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!"
+intro-title: ""
+intro: "Eine Safari ist mehr als nur Wildtierbeobachtung. In Südafrika gehen Sie auf Großstadt-Safari in Johannesburg, auf Gourmet-Safari in Weingütern und auf Küstensafari auf über 3.000 Strandkilometern. Zusammen mit NIKON Fotograf Kristof Göttling haben wir versucht, der faszinierenden Regenbogennation auf die Spur zu kommen. 'Wild auf Südafrika – starten Sie jetzt Ihre Safari!'"
 
 ---
 
-<div class="vpad--xxl text--white bg--turquoise">
+<div class="vpad--xxl bg--turquoise text--white  bv-parallax"  style="background-image: url('{{site.img}}/icons/bg-pattern-transp-50pc-2000px.png');">
   <div class="container">
     <div class="width width--lg">
-       <div class="text text--xl text--center">
-         <h2 class="title title--lg text--bolder">{{page.intro-title}}</h2>
-         <div class="space--sm text--normal text--italic"> <p>{{page.intro}}</p></div>
+       <div class="text text--xxxl">
+         <h2 class="title title--lg text--bolder">Auf Safari in der <br>Regenbogen-Nation</h2>
+         <div class="space--sm text--normal text--justify"> <p>{{page.intro}}</p></div>
        </div>
     </div>
   </div>
 </div>
 
 
-<div class="container vpad--xxl">
+    {% assign destinations = site.html_pages | where: 'content-pages', 'true'  | sort:'nav-order' %}
+<div class="bg--light{% cycle '', 'bob--swap' %} bv-parallax"  style="background-image: url('{{site.img}}/icons/bg-pattern-transp-2000px.png');">
+    <div class="container vpad--xxl">
+    {% for destination in destinations %}
 
-  {% assign destinations = site.html_pages | where: 'content-pages', 'true'  | sort:'nav-order' %}
 
-  {% for destination in destinations %}
 
-  <div class="bob {% cycle '', 'bob--swap' %}">
-    <div class="bob__img">
-      <a href="{{site.baseurl}}{{destination.url}}" class="bg-img bg-img--4-3 bv-box-shadow" style="background-image: url('{{site.img}}/content/{{destination.id}}/hero.jpg');"></a>
+    <div class="bob {% cycle '', 'bob--swap' %}">
+      <div class="bob__img">
+        <a href="{{site.baseurl}}{{destination.url}}" class="bg-img bg-img--4-3 bv-box-shadow" style="background-image: url('{{site.img}}/content/{{destination.id}}/hero.jpg');"></a>
+      </div>
+      <div class="bob__text ">
+        <div class="space--sm"></div>
+        <h2 class="title title--sm text--bolder text--upper">{{destination.title}}</h2>
+        <div class="space--xxs"></div>
+        <p class="text text--lg ">{{destination.summary}}</p>
+        <div class="space--lg"></div>
+        <a href="{{site.baseurl}}{{destination.url}}" class="btn btn--turquoise">{{destination.cta}}</a>
+      </div>
     </div>
-    <div class="bob__text ">
-      <div class="space--sm"></div>
-      <h2 class="title title--sm text--bolder text--upper">{{destination.title}}</h2>
-      <div class="space--xxs"></div>
-      <p class="text text--lg ">{{destination.summary}}</p>
-      <div class="space--lg"></div>
-      <a href="{{site.baseurl}}{{destination.url}}" class="btn btn--orange">{{destination.cta}}</a>
-    </div>
-  </div>
 
-  {% endfor %}
 
+
+    {% endfor %}
+      </div>
 </div>

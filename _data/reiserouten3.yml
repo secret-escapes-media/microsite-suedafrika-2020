@@ -1,6 +1,7 @@
 
 - id: three
-  title: Entlang der Elephant Coast
+  title: "Nah am Wasser: Elephant Coast"
+  intro: "Die Elephant Coast in KwaZulu Natal umfasst das Gebiet vom Lake St. Lucia im Süden bis zur Kosi Bay an der Grenze zu Mosambik. Mehrere Ökosysteme bilden diese außerordentliche Region, die vom iSimangaliso-Park dominiert wird und nicht nur für Taucher sehenswert ist (aber vor allem für diese)."
   num: "3"
 
   pois:
@@ -8,26 +9,22 @@
     title:
     items:
 
-      - title: "Kunst für die Welt: Florenz&nbsp;und&nbsp;Siena"
+      - title: "Lagunenwelt von St. Lucia"
         id: img1
-        caption:
-        content: "Ob Startort oder Zwischenetappe: Toskanas Kunststädte Florenz und Siena sollten bei jeder Rundreise dabei sein. Florenz begeistert mit dem Duomo und den Uffizien, während Siena ihre historische Altstadt, die zum UNESCO-Weltkulturerbe ernannt wurde, in die Waagschale wirft. Mittelalter oder Renaissance? Beides!"
+        content: "Am Eingang zum iSimangaliso Wetland Park liegt St. Lucia im Lagunengebiet des gleichnamigen Sees. Als Tor zu einer einzigartigen Feuchtlandschaft aus Seen, Mangroven, Sümpfen und Küstendünen ist das Städtchen ein beliebtes Ziel. Mehrmals täglich können Sie zur Lagune von St. Lucia aufbrechen und in nächster Nähe an den kolossalen Flusspferden vorbei rudern."
 
-      - title: Roadtrip im Zeichen der Traube
+      - title: Hluhluwe-iMfolozi Park
         id: img2
-        caption:
-        content: "In einer Region Italiens, deren Name fast zum Synonym für Genuss geworden ist, ist jede Station ein Highlight. Kunst und Geschichte, Weinberge, sanfte Hügel und hübsche Küstenorte – die Anzahl der möglichen Routen durch die Toskana ist schier endlos. Folgende Highlights sind deshalb eher stichpunktartige&nbsp;Anregungen."
+        content: "Im zentralen Zululand bietet der Hluhluwe-iMfolozi-Park, seit 1895 Afrikas erstes Naturreservat, seltenen Breitmaulnashörnern eine sichere Stätte. Daneben zeigen sich auch Giraffen, Geparde oder Wildhunde. Der südliche Teil des Reservats ist eine Savanne, durchzogen von zwei Flüssen, während der nördliche Teil eher aus kargem Hügelland besteht. Hier sind auch Self Drives möglich."
 
-      - title: Auf der Spur des Chianti
+      - title: "Tauchen mit Korallen: Sodwana Bay"
         id: img3
-        caption:
-        content: "Ein Besuch der Toskana ist nicht komplett ohne Weinverkostungen. Im goldenen Becken “Conca d’Oro” zwischen Florenz und Siena wird der berühmte Chianti Classico hergestellt. Viele kleine Weingüter operieren dabei als agrotouristische Herbergen und bieten Übernachtungs&shy;möglichkeiten&nbsp;an."
+        content: "Vorbei am Isimangaliso fesselt die Sodwana Bay die Aufmerksamkeit. Obwohl abgelegen und recht überschaubar sprechen zwei Argumente für den Nationalpark. Seine Strände, die sich gefühlte Ewigkeiten in die Ferne ziehen und die Korallenriffe, die mit Walhaien und Mantarochen glänzen. Vor Ort können Tauchkurse absolviert werden, um mit Marlins zu schwimmen oder im Käfig zu tauchen."
 
-      - title: Historische Städtchen
+      - title: Strände und Schildkröten
         id: img4
-        content: "Entdecken Sie über 2.400 Jahre Geschichte in Volterra, besuchen Sie die 15 Geschlechtertürme in San Gimignano und unternehmen Sie einen Ausflug ins Mittelalter in Monteriggioni, dessen Altstadtkern vollständig umschlossen von einer Stadtmauer ist. Im Anschluss lockt das Panorama im hügeligen Tal bei Colle&nbsp;di&nbsp;Val&nbsp;d’Elsa."
+        content: "Überhaupt die Strände! Menschenleer und naturbelassen, bieten Sie pures Badevergnügen am Indischen Ozean. Ein ganz besonderes Schauspiel kann zudem von November bis März beobachtet werden. Dann kommen Scharen von Leder- und Karettschildköten zur Eiablage an die Strände. Nächtliches Trekking eignet sich bestens, um Zeuge davon zu werden."
 
-      - title: Küstenromantik
+      - title: "Kosi Bay: das Aquarium"
         id: img5
-        caption:
-        content: "Es ist leicht zu vergessen, dass auch die Toskana über eine Mittelmeerküste verfügt. Nach all den Feldern, Weingütern und Altstädten ist die maritime Abwechslung sehr willkommen. Auf also zum Schachbrett der Terrazza Mascagni in Livorno und einen ungehinderten Blick auf das Meer werfen – und sich noch mehr ins Genussland&nbsp;verlieben."
+        content: "Als Endpunkt der Route bietet sich die Kosi-Bucht an, die aufgrund ihres Artenreichtums den Beinamen 'Aquarium' trägt. Die Bucht ist eigentlich eine Formationen aus vier verbundenen Seen mit Zugang zum Ozean. Zahlreiche Wassersportaktivitäten sorgen hier für angenehmen Zeitvertreib, darunter vor allem Schnorcheln oder traditioneller südafrikanischer Fischfang mit Reusen."

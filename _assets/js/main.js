@@ -16,7 +16,7 @@ for (i = 0; i < coll.length; i++) {
       content.style.height = null;
 
     } else {
-      content.style.height = "500px";
+      content.style.height = "520px";
       //content.style.minHeight = "400px";
       content.style.overflow = "auto";
     }
@@ -39,7 +39,7 @@ var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
         pixs2 = pixs / 30,
         offset = 800,
         offset2 = 1100,
-        calc = 0.55 - (pixs )/25;
+        calc = 0.7 - (pixs )/25;
         //calc2 = 0.55 - (pixs2 )/25;
         console.log(calc+' - '+pixs);
         //calc = 0 + (pixs )/10;

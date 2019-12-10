@@ -1,17 +1,6 @@
 {% for section in site.data.reiserouten2 %}
 
-
-<div class="vpad--lg bg--light" id="{{section.id}}">
-    <div class="container">
-      <div class="space--xl"></div>
-    <div class="width width--xxl">
-       <div class="text text--xl text--center">
-         <h2 class="title title--lg text--bold">{{section.title}}</h2>
-       </div>
-    </div>
-  </div>
-</div>
-
+{% include page/reiserouten/intro.html %}
 
 
 <div id="jssor_2" class="bv-slider bv-js-slider2" >

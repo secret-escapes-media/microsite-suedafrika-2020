@@ -1,6 +1,19 @@
 // general styles for the project that wouldn't be a reuseable component
 
 
+/* ==========================================================================
+   Dividers & Alignment
+   ========================================================================== */
+
+
+  .bv-headline-divider::after {
+    content: ('––-–');
+    display: block;
+    font-size: $s5;
+    letter-spacing: -4px;
+    margin: 2px 0 -12px -1px;
+  }
+
 
 /* ==========================================================================
  Collapsible
@@ -59,7 +72,7 @@
  }
 
 .bv-active{
-  background-color: rgba($black, .2);
+  background-color: rgba($black, .1);
   color: $white;
  }
 
@@ -79,7 +92,7 @@
 }
 
 .bv-active-caption{
- background-color: rgba($white, .8);
+ background-color: rgba($white, .7);
 }
 
 .bv-collapsible {
@@ -92,7 +105,7 @@
   transition: all 0.5s ease-out;
   display: flex;
   align-items: flex-end;
-  background-color: rgba($black, .2);
+  background-color: rgba($black, .1);
 }
 
 
@@ -126,14 +139,14 @@
   box-shadow: 0 0 5px 0 rgba($black, .3);
 
   @include bp($lg){
-      box-shadow: 0 0 5px 0 rgba($black, .3);
+      box-shadow: 0 0 5px 0 rgba($black, .2);
   }
 
   &:hover {
     box-shadow: 0 0 45px 0 rgba($black, .4);
-    transform: scale(1.1,1.1) rotate(0deg)!important;
+    transform: scale(1.2) rotate(0deg)!important;
     transition: all 0.2s ease-out;
-    z-index: 999!important;
+    z-index: 20!important;
     }
 }
 
@@ -145,6 +158,52 @@
   }
 
 }
+
+
+#boxcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+.box{
+
+flex: 1 1 100%;
+}
+}
+
+.Inside{
+
+ transform:  rotate(12deg);
+    width:170px;
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+}
+.Inside:hover{
+    z-index:100;
+    transform: scale(1.4) rotate(0deg);
+    background:#666666;
+}
+
+
+/* ==========================================================================
+Insidertipps
+========================================================================== */
+
+.bv-img-insider{
+  width: 75%;
+  max-width: $lg;
+
+  @include bp($xl) {
+    width: 25%;
+    max-width: none;
+  }
+}
+
+.bv-img-circle {
+  border-radius: 500px;
+  border: 4px $white solid;
+}
+
 
 /* ==========================================================================
    Parallax
@@ -193,6 +252,7 @@
   top:0px;
   left:0px;
   overflow:hidden;
+  border: $grey-lightest solid 25px;
 }
 
 .bv-slides{
@@ -223,7 +283,7 @@
     max-height: none;
   }
   @include bp($xl){
-    height: 90%;
+    height: 95%;
     min-height: 85vh;
     //padding: 160px;
     max-height: none;
@@ -271,7 +331,7 @@
     width: 80%;
     padding: 30px 40px 35px;
     max-width: 997px;
-    bottom: 100px;
+    bottom: 125px;
     left: auto;
 }
   @include bp($xl){
@@ -279,17 +339,14 @@
     width: 80%;
     padding: 40px 60px 50px;
     max-width: 997px;
-    bottom: 100px;
     left: auto;
   }
   @include bp($xxxl){
   width: 80%;
-  bottom: 100px;
   left: auto;
 }
   @include bp($xxxxl){
   width: 60%;
-  bottom: 100px;
   left: auto;
   }
 }
@@ -335,16 +392,18 @@
   margin-top: 80%;
   z-index: 99;
   transform: scale(.3);
-  @include bp($lg){
 
+  @include bp($lg){
     margin-top: 0px;
     width:55px;
     height:55px;
     transform: scale(.6);
 }
-  &--left{left:0; }
-  &--right{right:0;}
+  &--left{ left:0; padding-left:30px; transform: scale(1.2);}
+  &--right{ right:0; padding-right:30px; transform: scale(1.2);}
 }
+
+
 .bv-slider-arrows-viewbox{
 
 
