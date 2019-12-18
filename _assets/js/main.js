@@ -25,6 +25,46 @@ for (i = 0; i < coll.length; i++) {
 
 
 
+/*********** Change layer thumbnails  *************/
+
+  /*
+var thumbn = document.getElementsByClassName("bv-thumb-zoom");
+console.log(thumbn);
+var j;
+
+for (j = 0; j <= thumbn.length; j++) {
+  thumbn[j].addEventListener("mouseover", function() {
+    this.classList.toggle("bv-active");
+    var content = this.nextElementSibling;
+    //alert(content);
+    if (content.style.height){
+      content.style.height = null;
+      content.style.zIndex = "10";
+
+    } else {
+      content.style.height = "520px";
+      //content.style.minHeight = "400px";
+      content.style.overflow = "auto";
+      content.style.zIndex = "20";
+    }
+  if (this.style.height){
+      this.style.height = 'auto';
+      console.log("hey");
+      this.style.zIndex = "10";
+      this.style.display = "none";
+
+    } else {
+      //console.log("ho");
+      //this.style.zIndex = "0!important";
+      //this.style.display = "none";
+      this.style.zIndex = "20!important";
+
+    }
+   //this.style.zIndex = "20!important";
+
+  });
+}*/
+
 
 /*********** Blur and change text colour of hero image  *************/
 
@@ -41,7 +81,7 @@ var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
         offset2 = 1100,
         calc = 0.7 - (pixs )/25;
         //calc2 = 0.55 - (pixs2 )/25;
-        console.log(calc+' - '+pixs);
+        //console.log(calc+' - '+pixs);
         //calc = 0 + (pixs )/10;
         //calc2 = 0 + pixs ;
 /*
@@ -55,10 +95,10 @@ var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
 	if(isFirefox === false){
     $(".bv-banner-out").css({ "-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)","opacity": calc });
-    $(".bv-banner-out2").css({ "-webkit-filter": "blur("+pixs2+"px)","filter": "blur("+pixs2+"px)","opacity": calc2 });
+    //$(".bv-banner-out2").css({ "-webkit-filter": "blur("+pixs2+"px)","filter": "blur("+pixs2+"px)","opacity": calc2 });
   } else {
     $(".bv-banner-out").css({"opacity": calc });
-    $(".bv-banner-out2").css({"opacity": calc });
+  //  $(".bv-banner-out2").css({"opacity": calc });
   }
 
 

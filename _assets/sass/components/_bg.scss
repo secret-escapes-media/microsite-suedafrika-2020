@@ -8,6 +8,15 @@
   &--turquoise  { background-color: $turquoise; }
   &--turquoise-light  { background-color: $turquoise-light; }
   &--blue-grey  { background-color: $bv-bluegrey; }
+  &--blue  { background-color: $bv-blue; }
+  &--darkblue  { background-color: $bv-darkblue; }
+  &--green  { background-color: $bv-green; }
+  &--red  { background-color: $bv-red; }
+  &--yellow { background-color: $bv-yellow; }
+  &--beige { background-color: $bv-beige; }
+  &--bv-orange { background-color: $bv-orange; }
+  &--lightgreen { background-color: $bv-lightgreen; }
+  &--bv-accordion { background-color: $bv-accordion-color; }
   &--black  { background-color: rgba($black, 1);
     @include bp($lg){
       background-color: rgba($black, 1);

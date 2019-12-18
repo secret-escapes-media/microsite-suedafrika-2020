@@ -1,7 +1,7 @@
 
 - id: one
   title: "Klassisch: Garden Route"
-  intro: "Südafrikas Garden Route ist der Klassiker unter den Roadtrips. Die knapp 800 Kilometer lange Strecke führt von Port Elizabeth am Addo Nationalpark über Plettenberg Bay, Knysna und Wilderness bis zur Walhauptstadt Hermanus und nach&nbsp;Kapstadt."
+  intro: "Südafrikas Garden Route ist der Klassiker unter den Roadtrips. Die knapp 800 Kilometer lange Strecke führt von Port Elizabeth nahe des Addo Elephant National Parks über Plettenberg Bay, Knysna und George/Wilderness bis zur Walhauptstadt Hermanus und nach Kapstadt."
   num: "1"
 
   pois:
@@ -11,20 +11,20 @@
 
       - title: Von Port Elizabeth nach Plettenberg Bay
         id: img1
-        content: "Von der 'Friendly City' Port Elizabeth geht es zum Tsitsikamma National Park. Als Teil des größeren Garden-Route-Nationalparks, zieht er sich direkt an der Küste entlang und reizt mit ganzjährig mildem Klima, immergrünen Wäldern und einem Überangebot an Aktivitäten. Danach zeigt Plettenberg Bay warum er einer der beliebtesten Badeorte an der Garden Route ist."
+        content: "Von der 'Friendly City' Port Elizabeth geht es zum Tsitsikamma National Park. Als Teil des größeren Garden Route Nationalparks, zieht er sich direkt an der Küste entlang und reizt mit immergrünen Wäldern und einem Überangebot an Aktivitäten. Danach zeigt Plettenberg Bay warum er einer der beliebtesten Badeorte an der Garden Route ist."
 
       - title: Lagunenparadies Knysna
         id: img2
-        content: "Die charmante Hafenstadt, bekannt für köstliche Austern und eine große Lagune, wird von zwei Sandsteinklippen flankiert. Vom östlichen der Knysna Heads sind spektakuläre Ausblicke auf Stadt und Wasser vorprogrammiert. Als weitere Besonderheit beherbergt Knysna eine große Rastafari-Community, die im Rahmen einer Township Tour besucht werden kann."
+        content: "Die charmante Stadt, bekannt für köstliche Austern und eine malerische Lagune, wird von zwei Felsklippen flankiert. Von den Knysna Heads sind spektakuläre Ausblicke auf Stadt und Lagune vorprogrammiert. "
 
       - title: "Wilderness & Map of Africa"
         id: img3
-        content: "Einige der besten Strände Südafrikas offenbaren sich an einem Ort, der nicht nach seinem Namen aussieht: Wilderness. Daneben lädt das Städtchen zu Kanufahrten und Paragliding ein – und bietet bei Wilderness Heights von 'The Map of Africa' aus eine fantastische Aussicht auf den Kaaimans River, der die Umrisse des Kontinents nachzieht."
+        content: "Einige der besten Strände Südafrikas offenbaren sich an einem Ort, der nicht nach seinem Namen aussieht: Wilderness. Daneben lädt das Städtchen zu Kanufahrten und Paragliding ein – und bietet bei Wilderness Heights vom 'The Map of Africa'-Aussichtspunkt aus einen fantastischen Blick auf den Kaaimans River, der die Umrisse des Kontinents nachzieht."
 
       - title: Walhauptstadt & Kulturhauptstadt
         id: img4
-        content: "Weiter westwärts: in Hermanus am Western Cape lassen sich Wale von Juli bis November mit Leichtigkeit beobachten. Als fabelhafter Abschluss wartet schließlich Kapstadt mit seinem Tafelberg und dem Kap der Guten Hoffnung, Streetart und pulsierender Kultur, Woodstock und Green Point."
+        content: "Weiter westwärts: in Hermanus im Western Cape lassen sich von Juli bis November Wale beobachten. Als fabelhafter Abschluss wartet schließlich Kapstadt mit seinem Tafelberg und dem Kap der Guten Hoffnung, bunter Streetart und pulsierender Kultur, den Stadtvierteln Woodstock und dem Bo-Kap. "
 
-      - title: Alternative Strecke zurück?
+      - title: Abstecher in die Kleine Karoo
         id: img5
-        content: "Lorem ipsum.."
+        content: "Alternativ können Sie ab George in Richtung Oudtshoorn und von dort aus entlang der malerischen Swartberge bis zur alten Kolonialsiedlung Swellendam fahren. Nach einem Abstecher zum südlichsten Punkt des afrikanischen Kontinents am Cape Agulhas, erreichen Sie schließlich Kapstadt."

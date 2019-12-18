@@ -24,4 +24,8 @@
     max-width: 37px;
     &-sm { max-width: 48px; }
   }
+  &--partner3 { // max-width for this is about 150x46px
+    max-width: 85px;
+    &-sm { max-width: 100px; }
+  }
 }

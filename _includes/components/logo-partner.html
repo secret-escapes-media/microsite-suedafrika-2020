@@ -1,3 +1,8 @@
+{% if page.logo %}
+<a id="track-partner-logo{{include.placement | prepend: '-'}}" style="" class="logo logo--partner3{% if include.small %} logo--partner-sm{% endif %} " target="_blank" href="{{site.client.link3}}">
+  <img src="{{site.img}}/logo/{{page.logo}}" alt="{{page.title}} Logo">
+</a>
+{% endif %}
 <a id="track-partner-logo{{include.placement | prepend: '-'}}" class="logo logo--partner{% if include.small %} logo--partner-sm{% endif %}" href="{{site.client.link}}">
   <img src="{{site.img}}/logo/partner.svg" alt="{{site.client.name}} Logo">
 </a>

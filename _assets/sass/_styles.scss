@@ -50,7 +50,7 @@
 
 .accordion::after{
   content: url(../img/icons/close.svg);
-  transform: scale(.24) rotate(45deg);
+  transform: scale(.24) rotate(-45deg);
   display: block;
   margin-top: -52px;
   margin-bottom: -18px;
@@ -65,7 +65,7 @@
   }
 }
 .accordion:hover{
-  background-color: rgba($turquoise, .7);
+  background-color: rgba($bv-accordion-color, .7);
   color: $white;
   /*filter: blur(2px);
   transform: scale(1.1);*/
@@ -137,16 +137,20 @@
 
 .bv-thumb-zoom{
   box-shadow: 0 0 5px 0 rgba($black, .3);
+  z-index: 10;
+  height: auto;
 
   @include bp($lg){
       box-shadow: 0 0 5px 0 rgba($black, .2);
+      z-index: 10;
+      height: auto;
   }
 
   &:hover {
     box-shadow: 0 0 45px 0 rgba($black, .4);
-    transform: scale(1.2) rotate(0deg)!important;
+    transform: scale(1.05) rotate(0deg)!important;
     transition: all 0.2s ease-out;
-    z-index: 20!important;
+    //z-index: 20!important;
     }
 }
 
@@ -252,7 +256,7 @@ Insidertipps
   top:0px;
   left:0px;
   overflow:hidden;
-  border: $grey-lightest solid 25px;
+  //border: $grey-lightest solid 25px;
 }
 
 .bv-slides{
@@ -331,7 +335,7 @@ Insidertipps
     width: 80%;
     padding: 30px 40px 35px;
     max-width: 997px;
-    bottom: 125px;
+    bottom: 100px;
     left: auto;
 }
   @include bp($xl){

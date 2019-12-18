@@ -1,8 +1,8 @@
 
 
 - id: two
-  title: "Umwerfend: Panorama-Route"
-  intro: "Etwas kürzer ist die Panorama-Route, die durch die Drakensberge in der Provinz Mpumalanga führt. Hier wird auf natürliche Weise das Highveld von der etwa 1000 Meter tiefer gelegenen Ebene, dem Lowveld getrennt. Auf kleinem Raum versammeln sich etliche Naturschauspiele, die bequem an einem Tag zu besichtigen&nbsp;sind."
+  title: "Umwerfend: Panorama Route"
+  intro: "Etwas kürzer ist die Panorama Route, die durch Bergpässe in der Provinz Mpumalanga führt. Hier wird auf natürliche Weise das Highveld von der tiefer gelegenen Ebene, dem Lowveld getrennt. Auf kleinem Raum versammeln sich etliche Naturschauspiele, die bequem an einem Tag zu besichtigen sind."
   num: "2"
 
   pois:
@@ -12,16 +12,16 @@
 
       - title: "Sabie & Wasserfälle"
         id: img1
-        content: "Das Kernstück der Panorama Route führt am Blyde River Canyon entlang und kann vom Dörfchen Sabie im Osten angefahren werden. Die Umgebung reizt mit Wasserfällen wie den Bridal Veil Falls oder dem Zwillingswasserfall Mac Mac Falls. Aus einer Höhe von 56 Metern fällt das Wasser und bildet die Mac Mac Pools, natürliche Schwimmbecken voll mit klarem Wasser."
+        content: "Sabie dient als guter Startpunkt für die Route. Die Umgebung um den entspannten, kleinen Ort reizt mit Wasserfällen wie den Bridal Veil Falls oder den Mac Mac Falls. Aus einer Höhe von 56 Metern stürzt das Wasser und bildet die Mac Mac Pools, natürliche Schwimmbecken voll mit klarem Wasser."
 
       - title: Blyde River Canyon & God’s Window
         id: img2
-        content: "Nach Graskop beginnt der spannendste Abschnitt der Route, das Blyde River Canyon Gebiet. Wenige Aussichtspunkte weltweit können gefühlt mit diesem hier mithalten: God’s Window, wo sich ein weiter Blick eröffnet über den Canyon und über den Blyde River, der sich zwischen den Bergkuppen schlängelt bis hin zu den Lowvelds, welche in der Ferne hervorscheinen. Erhaben."
+        content: "Nach Graskop beginnt der spannendste Abschnitt der Route, der Blyde River Canyon. Unterwegs kommen Sie an atemberaubenden Aussichtspunkten vorbei - der eindrucksvollste ist unbestritten God’s Window: von hier bietet sich eine spektakuläre Aussicht über das Lowveld."
 
       - title: "Three Rondavels"
         id: img3
-        content: "Weitere “Oohs” und “Aahs” entlockt folgendes Naturwunder: Bourke’s Luck Potholes. Der Namensgeber war ein glücklicher Goldgräber, die Potholes sind eigentümliche Strudellöcher im Festgestein. Beeindruckende Blicke ins Land werfen Sie danach auf die Three Rondavels, Canyon-Formartionen, die wie traditionelle Rundhütten anmuten. Hier ist der Blyde River Canyon zu Ende."
+        content: "Weitere “Oohs” und “Aahs” entlockt folgendes Naturwunder: Bourke’s Luck Potholes. Der Namensgeber war ein glücklicher Goldgräber, die Potholes sind zylinderförmige Hohlräume, die das Wasser in den Fels gewaschen hat. Beeindruckende Blicke werfen Sie danach auf die Three Rondavels, Felsformartionen, die wie traditionelle Rundhütten anmuten. Sie bilden das Ende des Blyde River Canyons."
 
       - title: Pilgrim’s Rest
         id: img4
-        content: "Wenn Sie den Rückweg zum Ausgangspunkt der Route antreten, kommen Sie am bekannten Goldgräberdorf in Mpumalanga vorbei. In Pilgrim’s Rest wurden 1873 erhebliche Goldfunde gemacht, was Goldgräber aus der ganzen Welt anlockte. Wer nicht genug von Wasserfällen bekommt, sollte die Route mit den Berlin Falls abschließen, und staunen wie dort das Wasser kerzenförmig herabfällt."
+        content: "Wenn Sie den Rückweg zum Ausgangspunkt der Route antreten, können Sie einen Abstecher zum bekannten Goldgräberdorf in Mpumalanga machen. In Pilgrim’s Rest wurden 1873 erhebliche Goldfunde gemacht, was Goldgräber aus der ganzen Welt anlockte. Wer nicht genug von Wasserfällen bekommt, sollte ein Stück zurückfahren und die Route mit den Berlin Falls abschließen, wo das Wasser kerzenförmig herabstürzt."

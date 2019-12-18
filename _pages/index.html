@@ -7,20 +7,22 @@ title: Übersicht
 
 banner:
   title: Südafrika
-  title-sub: Auf Safari in der Regenbogen-Nation
+  title-sub: Wild auf Südafrika – Starten Sie jetzt Ihre Safari!
   title-size: banner-title--xl
 
 
-intro-title: ""
-intro: "Eine Safari ist mehr als nur Wildtierbeobachtung. In Südafrika gehen Sie auf Großstadt-Safari in Johannesburg, auf Gourmet-Safari in Weingütern und auf Küstensafari auf über 3.000 Strandkilometern. Zusammen mit NIKON Fotograf Kristof Göttling haben wir versucht, der faszinierenden Regenbogennation auf die Spur zu kommen. 'Wild auf Südafrika – starten Sie jetzt Ihre Safari!'"
+intro-title: "Auf Safari in der Regenbogennation"
+intro: "Eine Safari ist mehr als nur Wildtierbeobachtung. In Südafrika gehen Sie auf Großstadt-Safari in Johannesburg, auf Gourmet-Safari in den Winelands und auf Küstensafari entlang der über 3.000 Strandkilometer. Zusammen mit NIKON Fotograf Kristof Göttling gehen wir der faszinierenden Regenbogennation auf die&nbsp;Spur. "
+
+bg-color: "bg--white"
 
 ---
 
-<div class="vpad--xxl bg--turquoise text--white  bv-parallax"  style="background-image: url('{{site.img}}/icons/bg-pattern-transp-50pc-2000px.png');">
+<div class="vpad--xxl bg--darkblue text--white bv-parallax"  style="background-image: url('{{site.img}}/icons/bg-pattern-transp-50pc-2000px.png');">
   <div class="container">
     <div class="width width--lg">
-       <div class="text text--xxxl">
-         <h2 class="title title--lg text--bolder">Auf Safari in der <br>Regenbogen-Nation</h2>
+       <div class="text text--xl">
+         <h2 class="title title--lg text--center text--bolder">{{page.intro-title}}</h2>
          <div class="space--sm text--normal text--justify"> <p>{{page.intro}}</p></div>
        </div>
     </div>
@@ -29,7 +31,7 @@ intro: "Eine Safari ist mehr als nur Wildtierbeobachtung. In Südafrika gehen Si
 
 
     {% assign destinations = site.html_pages | where: 'content-pages', 'true'  | sort:'nav-order' %}
-<div class="bg--light{% cycle '', 'bob--swap' %} bv-parallax"  style="background-image: url('{{site.img}}/icons/bg-pattern-transp-2000px.png');">
+<div class="bg--beige{% cycle '', 'bob--swap' %} bv-parallax"  style="background-image: url('{{site.img}}/icons/bg-pattern-transp-50pc-2000px.png'); ">
     <div class="container vpad--xxl">
     {% for destination in destinations %}
 
@@ -37,7 +39,7 @@ intro: "Eine Safari ist mehr als nur Wildtierbeobachtung. In Südafrika gehen Si
 
     <div class="bob {% cycle '', 'bob--swap' %}">
       <div class="bob__img">
-        <a href="{{site.baseurl}}{{destination.url}}" class="bg-img bg-img--4-3 bv-box-shadow" style="background-image: url('{{site.img}}/content/{{destination.id}}/hero.jpg');"></a>
+        <a href="{{site.baseurl}}{{destination.url}}" class="bg-img bg-img--4-3 bv-box-shadow" style="background-image: url('{{site.img}}/content/{{destination.id}}/hero.jpg'); border: 10px solid #fff; {{destination.rotation}}"></a>
       </div>
       <div class="bob__text ">
         <div class="space--sm"></div>
@@ -45,7 +47,7 @@ intro: "Eine Safari ist mehr als nur Wildtierbeobachtung. In Südafrika gehen Si
         <div class="space--xxs"></div>
         <p class="text text--lg ">{{destination.summary}}</p>
         <div class="space--lg"></div>
-        <a href="{{site.baseurl}}{{destination.url}}" class="btn btn--turquoise">{{destination.cta}}</a>
+        <a href="{{site.baseurl}}{{destination.url}}" class="btn btn--blue">{{destination.cta}}</a>
       </div>
     </div>
 
@@ -54,3 +56,19 @@ intro: "Eine Safari ist mehr als nur Wildtierbeobachtung. In Südafrika gehen Si
     {% endfor %}
       </div>
 </div>
+
+
+  {% include page/promo-signup.html %}
+
+
+<div class="vpad--sm bg--light bv-parallax" style="background-image: url('{{site.img}}/icons/bg-pattern-transp-50pc-2000px.png');">
+  <div class="container">
+        <div class="space--xl"></div>
+       <div class="text text--xxxl text--center">
+         <h2 class="title title--lg text--bolder">Angebote</h2>
+       </div>
+  </div>
+</div>
+
+
+  {% include offer/all-offers.html %}
