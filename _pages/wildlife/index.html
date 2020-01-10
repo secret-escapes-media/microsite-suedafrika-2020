@@ -9,29 +9,30 @@ content-pages: true
 banner:
   title: Wildlife & Safari
   title-sub: Auf der richtigen Fährte
-  title-size: banner-title--xl
-  bg-hero: "background-position: 65% bottom;"
+  title-size: banner-title--xxl
+  bg-hero: "background-position: center;"
 
 summary: "Auge in Auge mit Dickhäutern, auf der Fährte von Geparden und Löwen: erleben Sie tierische Abenteuer in Nationalparks und privaten Game Reserves, tauchen Sie ab zu bunten Korallen und lassen Sie sich von eindrucksvollen Panoramen den Atem verschlagen."
 cta: "Mehr erfahren"
 
 intro-title: "Drei der fazinierendsten Nationalparks"
-intro: "Der Krüger-Nationalpark ist ein Begriff und eine Institution. Unter den 19 Nationalparks in Südafrika gibt es aber genug andere, die sich ihm zur Seite stellen können. Mögen Sie Elefanten, Schildkröten oder Flamingos? Weiterlesen,&nbsp;bitte!"
+intro: "Der Krüger Nationalpark ist ein Begriff und eine Institution. Unter den 19 Nationalparks in Südafrika gibt es aber viele weitere Parks, die nicht weniger reizvoll sind. Mögen Sie Elefanten, Schildkröten oder Flamingos? Weiterlesen,&nbsp;bitte."
 rotation: "transform: rotate(-2deg);"
 
 parks:
 
   title: Drei der faszinierendsten Nationalparks
   description: Der Krüger-Nationalpark ist ein Begriff und eine Institution. Unter den 19 Nationalparks in Südafrika gibt es aber viele weitere Parks, die nicht weniger reizvoll sind. Mögen Sie Elefanten, Schildkröten oder Flamingos? Weiterlesen,&nbsp;bitte.
+
   items:
 
     - title: 1. Krüger Nationalpark
       id: one
-      description: "Das größte und bekannteste Wildschutzgebiet Südafrikas liegt im Nordosten, in den Provinzen Mpumalanga und Limpopo. Der Krüger-Nationalpark ist in jeglicher Hinsicht ein Gigant: 1,9 Millionen Hektar groß und durch ein 2.500 Kilometer langes Netz von Straßen erschlossen. Hier haben Sie die Chance große und kleinere Raubkatzen, Elefanten, Giraffen und Nilpferde, Büffel und Krokodile zu beobachten – kurzum alle Tiere, die man im südlichen Afrika erwartet. Mindestens 3 Nächte sollten Sie für einen Besuch einplanen. Obwohl jede Jahreszeit lohnend ist, ist im südafrikanischen Sommer (Dezember bis Februar) die Chance, Tierbabys zu sehen, größer."
+      description: "Das größte und bekannteste Wildschutzgebiet Südafrikas liegt im Nordosten, in den Provinzen Mpumalanga und Limpopo. Der Krüger Nationalpark ist in jeglicher Hinsicht ein Gigant: 1,9 Millionen Hektar groß und durch ein 2.500 Kilometer langes Netz von Straßen erschlossen. Hier haben Sie die Chance große und kleinere Raubkatzen, Elefanten, Giraffen und Nilpferde, Büffel und Krokodile zu beobachten – kurzum alle Tiere, die man im südlichen Afrika erwartet. Mindestens 3 Nächte sollten Sie für einen Besuch einplanen. Obwohl jede Jahreszeit lohnend ist, ist im südafrikanischen Sommer (Dezember bis Februar) die Chance, Tierbabys zu sehen, größer."
 
     - title: "2. Addo Elephant National Park"
       id: two
-      description: "Knappe 70 Kilometer nördlich von Port Elizabeth  an der Garden Route im Eastern Cape liegt der Addo Elephant National Park, der sich dem Schutz der Dickhäuter widmet. Nachdem 11 Elefanten im Jahre 1931 den Grundstock des Parks bildeten, streifen heute bereits wieder mehr als 600 Dickhäuter durch das Schutzgebiet, zusammen mit Büffeln und zahlreichen Antilopenarten. Wenn Sie von den friedvollen Landriesen doch genug haben sollten, schafft die Küste mit Walen, Haien und Robben Abhilfe. Wanderer werden vom Zuurberg und von der Dünenlandschaft Alexandrias entzückt sein: 32 Kilometer sind auf dem Alexandria Hiking Trail zurückzulegen, jeder davon beeindruckender als der vorherige."
+      description: "Knappe 70 Kilometer nördlich von Port Elizabeth  an der Garden Route im Eastern Cape liegt der Addo Elephant National Park, der sich dem Schutz der Dickhäuter widmet. Nachdem 11 Elefanten im Jahr 1931 den Grundstock des Parks bildeten, streifen heute bereits wieder mehr als 600 Dickhäuter durch das Schutzgebiet, zusammen mit Büffeln und zahlreichen Antilopenarten. Wenn Sie von den friedvollen Landriesen doch genug haben sollten, schafft die Küste mit Walen, Haien und Robben Abhilfe. Wanderer werden vom Zuurberg und von der Dünenlandschaft Alexandrias entzückt sein: 32 Kilometer sind auf dem Alexandria Hiking Trail zurückzulegen, jeder davon beeindruckender als der vorherige."
 
     - title: "3. iSimangaliso Wetland Park"
       id: three
@@ -43,6 +44,13 @@ safaris:
   title: Unterwegs auf Safari
   description: "Für die meisten Reisenden ist eine Safari einer der großen Höhepunkte ihrer Südafrikareise. Es gibt mehrere Arten und Weisen, sich den wilden Tieren zu nähern, in jedem Fall ist ein Adrenalinrausch vorprogrammiert."
 
+
+tipps:
+
+  id: highlights
+  title: Safaris
+  fototipp: "Ein Zoomobjektiv bis 400 mm ist in den meisten Fällen ausreichend. Achten Sie jedoch auf die Einstellungen, um verwacklungsfrei zu fotografieren. Das Auto und die Tiere bewegen sich, daher brauchen Sie oft eine Verschlusszeit von mehr als 1/500s."
+  description: "Atemberaubend, wenn man zum ersten Mal den freilebenden, wilden Tieren gegenübersteht – ein Erlebnis, welches ich nie mehr missen möchte. Man glaubt gar nicht, wie weit sich viele Tiere den Menschen tatsächlich nähern. Die Guides und Driver machen einen fantastischen Job, was Ihnen die ersten Wildtier-Sichtungen innerhalb der ersten Stunde garantiert. Die Erklärungen und das Fachwissen der Guides gibt Ihnen das Gefühl, live bei einer National Geographic-Tierdokumentation dabei zu sein."
 
 
 
@@ -78,30 +86,31 @@ safaris:
 </div>
 <div class="bg--light bv-parallax" style="background-image: url('{{site.img}}/icons/bg-pattern-transp-2000px.png');">
 {% for park in page.parks.items %}
-    <div class="harvey {% cycle '', ' harvey--swap' %}">
+    <div class="harvey {% cycle '', ' harvey--swap' %} bv-boxpad--lg">
       <div class="harvey__img" style="background-image: url('{{site.img}}/content/{{page.id}}/parks/{{park.id}}.jpg');"></div>
-      <div class="harvey__text text--justify boxpad--lg text text--xxl">
+      <div class="harvey__text text--justify text text--xxl">
+          <div class="space--sm bv-mob-show"></div>
         <h2 class="title title--sm text--bolder text--upper">{{park.title}}</h2>
         <div class="space--xxs"></div>
         <p>{{park.description}}</p>
-        <div class="space--lg"></div>
+
       </div>
     </div>
  {% endfor %}
 </div>
 
 
- <div class="bv-parallax" style="background-image:url({{site.img}}/content/{{page.id}}/safari/hero.jpg); background-repeat:no-repeat; background-size:cover; background-position: center;">
+ <div class="bv-parallax bv-topic-herod" style="background-image:url({{site.img}}/content/{{page.id}}/safari/hero.jpg); background-repeat:no-repeat; background-size:cover; background-position: center;">
    <div class="vpad--xxxl">
      <div class="container">
        <div class="row row--justify row--xl-6-6 row--no-gutters " >
        <div class="col col--xl-8">
-       <div class="space--xxxl"></div>
+       <div class="space--xxl"></div>
           <div class="text text--normal text--white text--xl">
             <h2 class="title title--xl bv-headline-divider text--bolder">{{page.safaris.title}}</h2>
             <div class="space--xs"></div>
             <p>{{page.safaris.description}}</p>
-            <div class="space--xxxl"></div>
+            <div class="space--xxl"></div>
           </div>
        </div>
      </div>
@@ -111,7 +120,7 @@ safaris:
 
  <div class="bg--beige bv-parallax" style="background-image: url('{{site.img}}/icons/bg-pattern-transp-50pc-2000px.png');">
   <div class="container vpad--xl">
-    <div class="row row--xl-4-4-4 row--lg-6-6  " >
+    <div class="row row--xl-4-4-4 row--lg-6-6 " >
 
       {% for safari in site.data.sections %}
         <div class="col">
@@ -128,5 +137,4 @@ safaris:
   </div>
 </div>
 
-
-{% include page/promo-signup.html %}
+ {% include page/empfehlung.html %}

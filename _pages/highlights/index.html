@@ -8,9 +8,9 @@ content-pages: true
 
 banner:
   title: Highlights
-  title-sub: Südafrika von seiner schönsten Seite
-  title-size: banner-title--xl
-  bg-hero: "background-position: 65% bottom;"
+  title-sub: Südafrika von seiner schönsten&nbsp;Seite
+  title-size: banner-title--xxl
+  bg-hero: "background-position: center;"
 
 summary: "Voller Vielfalt und Strände, reich an Abenteuern und entspannt, charmant und authentisch, mehr für Ihr Geld und für Ihren Instagram-Account – wir könnten noch lange Südafrikas Vorzüge aufzählen."
 cta: "Mehr erfahren"
@@ -131,6 +131,12 @@ reasons:
         answer: "Südafrikas Genüsse sind vielzählig und kommen aus dem Meer (Languste, Snoek-Fisch) oder vom Land (Karoo-Lamm, Straußensteaks, getrocknetes Biltong-Fleisch). Nicht zuletzt die Unzahl an aromatischen Weinen zu moderaten Preisen ist etwas, das Sie nicht verpassen sollten."
 
 
+tipps:
+
+    id: highlights
+    title: Lion’s Head
+    fototipp: "Hier oben brauchen Sie definitiv ein Weitwinkelobjektiv, um die Szenerie gut einzufangen. Ich nutze hier das NIKKOR Z 24–70 mm 1:4 S. Gerade in den Gegenlicht-Situationen ist es außerdem hilfreich eine HDR-Aufnahme zu erstellen."
+    description: "Mein persönliches Südafrika-Highlight ist die morgendliche Wanderung auf den Lion’s Head. Ich war mittlerweile schon sechs- oder siebenmal dort oben und habe mich immer noch nicht satt gesehen. Wenn die Sonne langsam über den Tafelberg aufsteigt und Kapstadt in goldenes Licht taucht, sind direkt alle Strapazen vergessen. Die Stimmung ist einfach magisch und der Ausblick über die Stadt und die Küste entlang sucht seinesgleichen."
 
 
 ---
@@ -148,7 +154,6 @@ reasons:
 </div>
 
 
-
 <div class="bv-parallax" style="background-image:url({{site.img}}/content/{{page.id}}/reasons/hero.jpg); ">
   <div class="vpad--xxxl">
     <div class="container">
@@ -163,12 +168,15 @@ reasons:
       </div>
 
     </div>
+  </div>
+</div>
 
-  <div class="container" >
+  <div class="bv-parallax bv-remove-bg" style="background-image:url({{site.img}}/content/{{page.id}}/reasons/hero.jpg); ">
+  <div class="container vpad--md">
 
   {% for reason in page.reasons.items %}
 
-    <div class=" bg--white bv-btn-accordion text--white" style=" background-image: url('{{site.img}}/content/{{page.id}}/reasons/{{reason.id}}.jpg'); background-position: center; background-repeat: no-repeat;">
+    <div class="bv-btn-accordion text--white" style="background-image: url('{{site.img}}/content/{{page.id}}/reasons/{{reason.id}}.jpg'); background-position: center; background-repeat: no-repeat;">
       <div class="bv-mob-center ">
         <div class="text--white bv-collapsible accordion bg--bv-accordion title title--xs text--bold text--upper">
           <div class="title--xl text--serif bv-accordion-count" >{{reason.count}}.</div>
@@ -178,13 +186,13 @@ reasons:
            <div class="bv-active-caption bg--white boxpad--xl text--bold">{{reason.answer}}</div>
         </div>
       </div>
-
     </div>
 
    {% endfor %}
  </div>
+<div class="space--xxxl bv-mob-hide"></div>
 </div>
-</div>
+
 
 <div class="bv-parallax" style="background-image:url({{site.img}}/content/{{page.id}}/highlights/hero.jpg); background-repeat:no-repeat; background-size:cover; background-position: center;">
   <div class="vpad--xxxl">
@@ -196,20 +204,21 @@ reasons:
              <h2 class="title title--xl bv-headline-divider text--bolder">{{page.highlights.title}}</h2>
              <div class="space--xs"></div>
              <p>{{page.highlights.description}}</p>
-
+              <div class="space--lg"></div>
            </div>
         </div>
       </div>
     </div>
+
   </div>
-
-
+  </div>
+<div class="bv-parallax bv-remove-bg" style="background-image:url({{site.img}}/content/{{page.id}}/highlights/hero.jpg); background-repeat:no-repeat; background-size:cover; background-position: center;">
   <div class="container bg--white" >
   <div class="row  row--xl-6-6 row--gutters-sm"  >
   {% for highlight in page.highlights.items %}
 
     <div class="col text text--md text--justify ">
-    <div class="space--xxs"></div>
+
     <div class="space--xxs"></div>
       <div class="bg-img bg--white bg-img--16-9"  style="background-image: url('{{site.img}}/content/{{page.id}}/highlights/{{highlight.id}}.jpg');"> </div>
       <div class="bg--white">
@@ -227,6 +236,11 @@ reasons:
   <div class="space--xl text--center">
     <a href="{{page.highlights.cta}}" class="btn btn--blue" target="_blank">Weitere Infos zu Südafrika</a>
     <div class="space--xl"></div>
+  </div>
 </div>
+<div class="space--xxxxl bv-mob-hide"></div>
 </div>
- <div class="space--xxxl"></div>
+
+{% include page/empfehlung.html %}
+
+{% include page/promo-signup.html %}

@@ -11,10 +11,10 @@
        <div data-u="slides3" class="bv-slides-wrap" id="bv-wrap3" >
            {% for poi in section.pois.items %}
            <div>
-               <div class="bv-slides bv-js-slides" data-u="image3" style="background-image: url('{{site.img}}/content/{{page.id}}/slider3/{{poi.id}}.jpg'); background-size: cover; background-position: center bottom!important; ">
+               <div class="bv-slides bv-js-slides" data-u="image3" style="background-image: url('{{site.img}}/content/{{page.id}}/slider3/{{poi.id}}.jpg'); ">
                  <div class="bv-slider-title-wrap bv-js-slider-title-wrap text--white" >
-                      <div class="text--left text--black bv-slider-title bv-js-slider-title bg--white">
-                        <h1 class="title title--xxs text--bold text--upper  ">{{poi.title}}</h1>
+                      <div class="text--justify text--black bv-slider-title bv-js-slider-title bv-bg--box">
+                        <h1 class="text--left title title--xxs text--bold text--upper  ">{{poi.title}}</h1>
                         <p class="text text--lg ">{{poi.content}}</p>
                       </div>
                   </div>
@@ -61,7 +61,16 @@
   // gives slides the width of the screen, because the script doesn't work without setting the width-pixel
     var navHeight3 = document.getElementsByClassName('site-nav')[0].offsetHeight;
     var cssWidth3 = window.innerWidth;
-    var cssHeight3 = window.innerHeight/1.2;
+    //var cssHeight3 = window.innerHeight/1.2;
+
+    if (cssWidth3 <= 650){
+       cssHeight3 = cssWidth3*1.4;
+      console.log(cssHeight3);
+    }else{
+       cssHeight3 = window.innerHeight/1.2;
+      console.log(cssHeight3);
+    }
+
     var bvSliderWrap3 = document.getElementById('bv-wrap3');
     var bvSlider3 = document.getElementsByClassName('bv-js-slider3');
         bvSliderWrap3.style.width = cssWidth3+'px';

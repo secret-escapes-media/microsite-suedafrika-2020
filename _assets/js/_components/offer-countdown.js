@@ -8,17 +8,17 @@ $('.js-offer-expires').each(function() {
     date.getMonth(),
     date.getDate()+1
   );
-
+//console.log(expires);
   $(this).countdown(expires, function(event) {
     if (event.elapsed) {
       // the expired date is in the past so the expired message is removed
-      $(this).remove();
+      $(this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode).remove();
     } else if (event.offset.totalDays === 0) {
       // there is 0 days left, just hours, so ends today
-      $(this).html(event.strftime('Ending <strong>Today</strong>'));
+      $(this).html(event.strftime('Endet <strong>heute</strong>'));
     } else {
       // there are days left, outputs with either day or days
-      $(this).html(event.strftime('Ending in <strong>%-D day%!D</strong>'));
+      $(this).html(event.strftime('Endet in <strong>%-D Tagen</strong>'));
     }
   });
 });

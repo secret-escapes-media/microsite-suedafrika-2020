@@ -9,20 +9,29 @@ content-pages: true
 banner:
   title: Roadtrips
   title-sup: Immer der Straße nach
-  title-size: banner-title--xl
+  title-size: banner-title--xxl
   bg-hero: "background-position: 30% center;"
 
 
-summary: "Viele Wege führen zum südafrikanischen Reiseglück. Von der klassischen Garden Route über einen Canyon-Roadtrip bis zum Geheimtipp Elephant Coast: so entdecken Sie Südafrika auf vier Rädern."
+summary: "Viele Wege führen zum südafrikanischen Reiseglück. Von der klassischen Garden Route über einen Canyon-Roadtrip bis zum Geheimtipp Elephant Coast: so&nbsp;entdecken Sie Südafrika auf vier Rädern."
 cta: "Mehr erfahren"
 
 intro-title: ""
 intro: "Die beste Art, viele Highlights in einer Reise abzudecken ist immer noch der Roadtrip. Hierfür ist Südafrika prädestiniert und neben der klassischen Gardenroute gibt es mindestens noch zwei weitere Routen, die Ihnen den Atem verschlagen werden.  "
 rotation: "transform: rotate(2deg);"
 
+
+
+
+tipps:
+
+  id: reiserouten
+  title: Blyde Canyon
+  fototipp: "Versuchen Sie bei der Gestaltung der Fotos auf den Bildaufbau zu achten. Nicht nur die Drittelregel, sondern auch die Staffelung von Vorder-, Mittel- sowie Hintergrund verleihen dem Bild Tiefe und Stabilität. Die Gitterlinien können Sie zur Hilfe in den meisten Kameras mit einblenden."
+  description: "Die Route über die R532 am Blyde River Canyon entlang kann ich jedem nur ans Herz legen. Unfassbare Aussichten, tiefe Schluchten, riesige Wasserfälle und atemberaubende Landschaften geben sich hier die Klinke in die Hand. Neben dem Three Rondavels View Point kann ich im Norden den Lowveld View besonders empfehlen. Im Süden haben mich die Berlin Falls und das süße Örtchen Pilgrim’s Rest fest in ihren Bann gezogen."
+
+
 ---
-
-
 
 
 
@@ -37,12 +46,42 @@ rotation: "transform: rotate(2deg);"
 </div>
 
 <div id="bv-road-ie">
-  {% include page/reiserouten/reiserouten1-ie.html %}
-  {% include page/reiserouten/reiserouten2-ie.html %}
-  {% include page/reiserouten/reiserouten3-ie.html %}
+
+  {% for routes in site.data.reiserouten-ie %}
+  <div class="vpad--xxl bg--light bv-parallax" style="background-image: url('{{site.img}}/icons/bg-pattern-transp-2000px.png');">
+      <div class="container">
+
+      <div class="width width--lg">
+         <div class="text text--xl text--center">
+           <h2 class="title title--lg bv-headline-divider text--bold">{{routes.title}}</h2>
+             <div class="space--xs"></div>
+           <p>{{routes.intro}}</p>
+         </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="vpad--md" style="background-image: url('{{site.img}}/content/{{page.id}}/slider{{routes.num}}/img1.jpg'); background-size: cover; background-position: center 70%;">
+    <div class="container ">
+        <div class="space--xxxl vpad--xl bv-mob-hide"></div>
+        <div class="space--xxxl"></div>
+        <div class="space--xxxl"></div>
+        <div class="space--xxxl"></div>
+        <div class="width width--xxl text--white" >
+          <div class=" text--left bv-bg--box boxpad--xxl">
+            <h1 class="title title--sm text--semibold text--upper ">{{routes.headline}}</h1>
+            <p class="text text--lg ">{{routes.content}}</p>
+          </div>
+         </div>
+
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
-{% include page/promo-signup.html %}
+
+{% include page/empfehlung.html %}
 
 
 <script>

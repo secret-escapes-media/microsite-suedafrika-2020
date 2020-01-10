@@ -2,6 +2,7 @@
 
 .text {
   // sizes
+  &--xxxxl { font-size: 1.4rem; line-height: 1.6; letter-spacing: 0; }
   &--xxxl { font-size: 1.35rem; line-height: 1.6; letter-spacing: 0; }
   &--xxl { font-size: 1.25rem; line-height: 1.6; letter-spacing: 0; }
   &--xl  { font-size: 1.15rem; line-height: 1.6; letter-spacing: 0; }
@@ -10,7 +11,7 @@
 
 
   // styles
-  &--serif       { font-family: $serif; }
+  &--serif       { font-family: $serif!important; }
   &--italic       { font-style: italic; }
   &--light        { font-weight: 300; }
   &--normal       { font-weight: 400; }

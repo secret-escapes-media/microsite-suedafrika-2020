@@ -61,6 +61,14 @@
       &:before { border-color: $orange; }
     }
   }
+  &--outline-blue { //color: $orange;
+    &:before { border-color: $bv-darkblue; }
+    &:hover {
+      color: $white;
+      background-color: $bv-darkblue;
+      &:before { border-color: $bv-darkblue; }
+    }
+  }
   &--outline-turquoise {// color: $turquoise;
     &:before { border-color: $turquoise; }
     &:hover {

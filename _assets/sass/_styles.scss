@@ -1,8 +1,27 @@
 // general styles for the project that wouldn't be a reuseable component
 
+/* ==========================================================================
+   Video
+========================================================================== */
+
+.bv-video {
+  position: absolute;
+  right: 0;
+  top: 0;
+  //min-width: 100%;
+  height: 100%;
+  @include bp($lg){
+    position: absolute;
+    right: 0;
+    top: 0;
+  //  min-width: 100%;
+    height: 100%;
+    opacity: .9;
+  }
+}
 
 /* ==========================================================================
-   Dividers & Alignment
+   Dividers, Visibility & Alignment
    ========================================================================== */
 
 
@@ -14,15 +33,58 @@
     margin: 2px 0 -12px -1px;
   }
 
+  .bv-scroll{ height: 80vh; overflow: scroll;}
+  .bv-mob-show {display: none;}
+  .bv-mob-hide {display: block;}
+
+  .bv-boxpad {
+    &--xxxxl { padding: $s9; }
+    &--xxxl  { padding: $s7; }
+    &--xxl   { padding: $s5; }
+    &--xl    { padding: $s3; }
+    &--lg    { padding: $s1; }
+    &--md    { padding: $s-1; }
+    &--sm    { padding: $s-3; }
+    &--xs    { padding: $s-5; }
+    &--xxs   { padding: $s-7; }
+    @include bp($xxl) {
+      &--xxxxl { padding: $s10; }
+      &--xxxl  { padding: $s8; }
+      &--xxl   { padding: $s6; }
+      &--xl    { padding: $s4; }
+      &--lg    { padding: 0px; }
+      &--md    { padding: $s0; }
+      &--sm    { padding: $s-2; }
+      &--xs    { padding: $s-4; }
+      &--xxs   { padding: $s-6; }
+    }
+  }
+
+  @media only screen and (max-width: 970px) {
+
+    .bv-mob-hide {display: none;}
+    .bv-mob-show {display: block;}
+    .bv-mob-rotation{ transform: rotate(0deg)!important; }
+
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .bv-mob-padding {  padding: 0px!important;}
+
+  }
 
 /* ==========================================================================
  Collapsible
 ========================================================================== */
 
 .bv-btn-accordion {
-  margin-bottom: 4px;
-  //border-bottom: 2px solid rgba($grey-darker, .3);
+  margin-bottom: 3px;
+
+  @include bp($xxxl){
+    margin-bottom: 4px;
+  }
 }
+
 .bv-accordion-count{
   margin-right: 10px;
   padding-right: 10px;
@@ -52,23 +114,27 @@
   content: url(../img/icons/close.svg);
   transform: scale(.24) rotate(-45deg);
   display: block;
-  margin-top: -52px;
+  margin-top: -45px;
   margin-bottom: -18px;
   margin-left: 94%;
   transition: all 0.3s ease-out;
 
   @include bp($lg){
     display: block;
-    margin-top: -58px;
+    margin-top: -53px;
     margin-bottom: -18px;
     margin-left: 96%;
+  }
+
+  @include bp($xl){
+    display: block;
+    margin-top: -58px;
+
   }
 }
 .accordion:hover{
   background-color: rgba($bv-accordion-color, .7);
   color: $white;
-  /*filter: blur(2px);
-  transform: scale(1.1);*/
  }
 
 .bv-active{
@@ -92,7 +158,7 @@
 }
 
 .bv-active-caption{
- background-color: rgba($white, .7);
+ background-color: rgba($white, .85);
 }
 
 .bv-collapsible {
@@ -111,7 +177,7 @@
 
 
 /* ==========================================================================
-   Gallery - Thumbnails
+   Safari - Gallery - Thumbnails
    ========================================================================== */
 
 .bv-thumb-vignette{
@@ -154,7 +220,7 @@
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 768px) {
 
   .bv-thumb-zoom{
     box-shadow: 0 0 5px 0 rgba($black, .3);
@@ -170,9 +236,8 @@
   align-items: flex-start;
   justify-content: center;
 .box{
-
-flex: 1 1 100%;
-}
+  flex: 1 1 100%;
+  }
 }
 
 .Inside{
@@ -205,7 +270,7 @@ Insidertipps
 
 .bv-img-circle {
   border-radius: 500px;
-  border: 4px $white solid;
+  //border: 2px $grey-dark solid;
 }
 
 
@@ -225,9 +290,12 @@ Insidertipps
   background-image: none!important;
 }
 
+.bv-topic-hero{ background-size: contain; }
+
 .bv-parallax{
       background-attachment: scroll;
-      background-size: cover;
+      background-size: auto;
+      background-repeat: repeat;
 
   }
 }
@@ -255,15 +323,28 @@ Insidertipps
   position:relative;
   top:0px;
   left:0px;
-  overflow:hidden;
+  //overflow:hidden;
   //border: $grey-lightest solid 25px;
 }
 
 .bv-slides{
   cursor: pointer;
+  background-size: 120vw;
+  background-repeat: no-repeat;
+    background-position: center top;
+@include bp($lg){
+  background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  }
+}
 
+.bv-bg--box{
+  background-color: rgba($bv-beige, 1);
+  color: $black;
+@include bp($lg){
+    background-color: rgba($white, 1);
+  }
 }
 
 .bv-slider-title-wrap{
@@ -291,6 +372,38 @@ Insidertipps
     min-height: 85vh;
     //padding: 160px;
     max-height: none;
+  }
+}
+
+.bv-slider-title{
+  position: absolute;
+  width: 100%;
+  padding: 20px 34px 55px;
+  left: 0px;
+  bottom: 40px;
+  z-index: 50;
+
+  @include bp($lg){
+    width: 80%;
+    padding: 30px 40px 35px;
+    max-width: 997px;
+    bottom: 100px;
+    left: auto;
+}
+  @include bp($xl){
+
+    width: 80%;
+    padding: 40px 60px 50px;
+    max-width: 997px;
+    left: auto;
+  }
+  @include bp($xxxl){
+  width: 80%;
+  left: auto;
+}
+  @include bp($xxxxl){
+  width: 60%;
+  left: auto;
   }
 }
 
@@ -324,36 +437,6 @@ Insidertipps
     }
 }
 
-.bv-slider-title{
-  position: absolute;
-  width: 100%;
-  padding: 20px 34px 55px;
-  left: 0px;
-  bottom: 40px;
-
-  @include bp($lg){
-    width: 80%;
-    padding: 30px 40px 35px;
-    max-width: 997px;
-    bottom: 100px;
-    left: auto;
-}
-  @include bp($xl){
-
-    width: 80%;
-    padding: 40px 60px 50px;
-    max-width: 997px;
-    left: auto;
-  }
-  @include bp($xxxl){
-  width: 80%;
-  left: auto;
-}
-  @include bp($xxxxl){
-  width: 60%;
-  left: auto;
-  }
-}
 
 
 /*jssor slider loading skin spin css*/
@@ -391,11 +474,11 @@ Insidertipps
 .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
 
 .bv-slider-arrow{
-  width:35px;
+  width:40px;
   height:35px;
-  margin-top: 80%;
+  margin-top: 34vh;
   z-index: 99;
-  transform: scale(.3);
+  //transform: scale(.5);
 
   @include bp($lg){
     margin-top: 0px;
@@ -412,8 +495,6 @@ Insidertipps
 
 
 }
-
-
 
 
 
@@ -466,3 +547,23 @@ slider2
        }
 
        img { width: 100%; }
+
+
+
+
+
+
+       /*************** offer tag for included tag *******************/
+       .flight-tag {
+         position: absolute;
+         top: $s-2;
+         left: $s-2;
+         display: block;
+         //width: 50%;
+         @include bp($sm){
+           top: $s0;
+           left: $s0;
+           height: 35px;
+           width: auto;
+         }
+       }

@@ -11,10 +11,11 @@
        <div data-u="slides" class="bv-slides-wrap " >
            {% for poi in section.pois.items %}
            <div>
-               <div class="bv-slides" data-u="image" style="background-image: url('{{site.img}}/content/{{page.id}}/slider{{section.num}}/{{poi.id}}.jpg'); background-size: cover; background-position: center bottom;">
+               <div class="bv-slides" data-u="image" style="background-image: url('{{site.img}}/content/{{page.id}}/slider{{section.num}}/{{poi.id}}.jpg'); ">
                  <div class="bv-slider-title-wrap" >
-                      <div class="text--left text--black bv-slider-title bg--white bv-box-shadow">
-                        <h1 class="title title--xxs text--bold text--upper">{{poi.title}}</h1>
+                      <div class="text--justify text--black bv-slider-title bv-bg--box bv-box-shadow">
+                        <div class="space--xs"></div>
+                        <h1 class="text--left title title--xxs text--bold text--upper">{{poi.title}}</h1>
                         <p class="text text--lg ">{{poi.content}}</p>
                       </div>
                   </div>
@@ -61,13 +62,21 @@
   // gives slides the width of the screen, because the script doesn't work without setting the width-pixel
     var navHeight =  document.getElementsByClassName('site-nav')[0].offsetHeight;
     var cssWidth = window.innerWidth;
-    var cssHeight = window.innerHeight/1.2;
+    //var cssHeight = window.innerHeight/1.2;
+
+    if (cssWidth <= 650){
+      var cssHeight = cssWidth*1.4;
+      //console.log(cssHeight);
+    }else{
+      var cssHeight = window.innerHeight/1.2;
+      //console.log(cssHeight);
+    }
     var bvSliderWrap = document.getElementsByClassName('bv-slides-wrap');
     var bvSlider = document.getElementsByClassName('bv-slider');
         bvSliderWrap[0].style.width = cssWidth+'px';
         bvSliderWrap[0].style.height = cssHeight+'px';
         bvSlider[0].style.height = cssHeight-navHeight+'px';
-    console.log(bvSliderWrap+' 1 '+bvSlider[0].style.height);
+
 
     jssor_1_slider_init = function() {
 

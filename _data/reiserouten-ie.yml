@@ -1,0 +1,25 @@
+
+- id: one
+  title: "Klassisch: Garden Route"
+  intro: "Südafrikas Garden Route ist der Klassiker unter den Roadtrips. Die knapp 800 Kilometer lange Strecke führt von Port Elizabeth nahe des Addo Elephant National Parks über Plettenberg Bay, Knysna und George/Wilderness bis zur Walhauptstadt Hermanus und nach Kapstadt."
+  num: "1"
+  headline: Von Port Elizabeth nach Plettenberg Bay
+  content: "Von der 'Friendly City' Port Elizabeth geht es zum Tsitsikamma National Park. Als Teil des größeren Garden Route Nationalparks, zieht er sich direkt an der Küste entlang und reizt mit immergrünen Wäldern und einem Überangebot an Aktivitäten. Danach zeigt Plettenberg Bay warum er einer der beliebtesten Badeorte an der Garden Route ist."
+
+
+- id: two
+  title: "Umwerfend: Panorama&nbsp;Route"
+  intro: "Etwas kürzer ist die Panorama Route, die durch Bergpässe in der Provinz Mpumalanga führt. Hier wird auf natürliche Weise das Highveld von der tiefer gelegenen Ebene, dem Lowveld getrennt. Auf kleinem Raum versammeln sich etliche Naturschauspiele, die bequem an einem Tag zu besichtigen sind."
+  num: "2"
+  headline: "Sabie & Wasserfälle"
+  content: "Sabie dient als guter Startpunkt für die Route. Die Umgebung um den entspannten, kleinen Ort reizt mit Wasserfällen wie den Bridal Veil Falls oder den Mac Mac Falls. Aus einer Höhe von 56 Metern stürzt das Wasser und bildet die Mac Mac Pools, natürliche Schwimmbecken voll mit klarem Wasser."
+
+
+
+
+- id: three
+  title: "Nah am Wasser: Elephant Coast"
+  intro: "Die Elephant Coast in KwaZulu-Natal umfasst das Gebiet vom Lake St. Lucia im Süden bis zur Kosi Bay an der Grenze zu Mosambik. Mehrere Ökosysteme bilden diese außerordentliche Region. Wichtige Stationen auf der Strecke sind neben St. Lucia und Kosi Bay, der iSimangaliso Wetland Park – der vor allem für Taucher sehenswert ist - der Hluhluwe Imfolozi Park und Sodwana Bay."
+  num: "3"
+  headline: "Lagunenwelt von St. Lucia"
+  content: "Am Eingang zum iSimangaliso Wetland Park liegt St. Lucia im Lagunengebiet des gleichnamigen Sees. Als Tor zu einer einzigartigen Feuchtlandschaft aus Seen, Mangroven, Sümpfen und Küstendünen ist das Städtchen ein beliebtes Ziel. Auf dem Lake St. Lucia können täglich geführten Bootstouren unternommen werden, wobei Sie kolossale Flusspferde aus nächster Nähe bewundern können."
